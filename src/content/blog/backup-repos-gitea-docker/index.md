@@ -41,8 +41,9 @@ error message `The Git data underlying repository cannot be read`.
 
 My research on this problem led me to a Github Gist titled
 [**Restoring Git Repositories on a Gitea Instance: A Step-by-Step Guide**](https://gist.github.com/HWiese1980/2548e5c150d73d6a55bf52530f11d2d3), written
-by Github user [Hendrik Wiese](https://gist.github.com/HWiese1980). In his blog post,
-Wiese highlights that all repositories hosted on a Gitea instance are stored in
+by Github user [Hendrik Wiese](https://gist.github.com/HWiese1980). In his Github Gist
+`README`, Wiese highlights that all repositories hosted on a Gitea instance
+are stored in
 the `/data/git/gitea-repositories` directory. To ensure that all Git repositories
 can be read after updating Gitea, Wiese states that one must `clone` all their
 repositories locally on their computer, and then copy those repositories into
@@ -61,5 +62,9 @@ were saved when I updated Gitea.
     updating Gitea.
   </figcaption>
 </figure>
+
+Thus, the error message `The Git data underlying repository cannot be read` began
+to make much more sense: how could the underlying repositories be read
+if there were *not even there* in the first place?
 
 ## Building Upon Hendrik Wiese's Solution
