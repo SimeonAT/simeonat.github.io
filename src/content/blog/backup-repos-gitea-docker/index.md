@@ -108,13 +108,13 @@ I created the `/gitea-repositories` directory, and saved all of my repositories
 inside of it.
 
 
-# TODO:
-#   1. There is more to this than meets the eye. The directory is actually
-#      called `repositories`, not `gitea-repositories`. Explain how you discovered
-#      this. You created a new Gitea repository, looked into `data/git`, and found
-#      the directory has a different name.
-#
-#   2. Divide the "Solutions" section of your blog post into different subsections.
-#
-#   3. Then resume talking about how you solve this problem using Docker bind mount.
-#
+<!-- # TODO:
+   1. There is more to this than meets the eye. The directory is actually
+      called `repositories`, not `gitea-repositories`. Explain how you discovered
+      this. You created a new Gitea repository, looked into `data/git`, and found
+      the directory has a different name.
+
+   2. Divide the "Solutions" section of your blog post into different subsections.
+
+   3. Then resume talking about how you solve this problem using Docker bind mount.
+ -->
