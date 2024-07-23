@@ -40,7 +40,7 @@ this isue was happening: what is the root cause of the problem that results in t
 error message: `The Git data underlying repository cannot be read`.
 
 My research on this problem led me to a Github Gist titled
-**Restoring Git Repositories on a Gitea Instance: A Step-by-Step Guide**, written
+[**Restoring Git Repositories on a Gitea Instance: A Step-by-Step Guide**](https://gist.github.com/HWiese1980/2548e5c150d73d6a55bf52530f11d2d3), written
 by Github user [Hendrik Wiese](https://gist.github.com/HWiese1980). In his blog post,
 Wiese highlights that all repositories hosted on a Gitea instance are stored in
 the `/data/git/gitea-repositories` directory. To ensure that all Git repositories
