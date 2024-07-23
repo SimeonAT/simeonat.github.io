@@ -44,10 +44,10 @@ My research on this problem led me to a Github Gist titled
 by Github user [Hendrik Wiese](https://gist.github.com/HWiese1980). In his Github Gist
 `README`, Wiese highlights that all repositories hosted on a Gitea instance
 are stored in
-the `/data/git/gitea-repositories` directory. To ensure that all Git repositories
-can be read after updating Gitea, Wiese states that one must `clone` all their
+the `/data/git/gitea-repositories` directory. In other words, to ensure that all
+Git repositories can be read in Gitea, Wiese states that one must `clone` all their
 repositories locally on their computer, and then copy those repositories into
-`/data/git/gitea-repositories` after updating Gitea.
+`/data/git/gitea-repositories`.
 
 This insights provided by Wiese allowed me to discover why I was getting the
 `The Git data underlying repository cannot be read` error message in the first place:
@@ -67,4 +67,22 @@ Thus, the error message `The Git data underlying repository cannot be read` bega
 to make much more sense: how could the underlying repositories be read
 if there were *not even there* in the first place?
 
-## Building Upon Hendrik Wiese's Solution
+## The Solution
+
+### Hendrik Wiese's Solution
+
+At a higher level, the [solution](https://gist.github.com/HWiese1980/2548e5c150d73d6a55bf52530f11d2d3) 
+proposed by Hendrik Wiese is to save all the
+Git repositories hosted on the Gitea instance locally on your computer. Whenever
+the you encounter the `The Git data underlying repository cannot be read` error,
+you navigate to `/data/git`, and place all your locally hosted repositories into
+a newly made `gitea-repositories` directory.
+
+Although this solution fixes the problem at its core,
+I would have to save the latest versions
+of all of my Gitea repositories locally on computer, and would have to manually
+create and place all my repositories in `/data/git/gitea-repositories` everytime I
+would have to update Gitea. As a result, this led me to think about a more conevient
+solution that could address this issue.
+
+### Building Upon It
