@@ -50,5 +50,6 @@ repositories locally on their computer, and then copy those repositories into
 
 This inishgt provided by Wiese allowed me to discover why I was getting the
 `The Git data underlying repository cannot be read` error message in the first place:
-my repositories were *not* present in `/data/git/gitea-repositories` of
-my Gitea instance after I updated Gitea.
+the `gitea-repositories` directory was *not* present in the `/data/git` directory of
+my Gitea instance after I updated Gitea. In other words, *none* of my respositories
+were saved when I updated Gitea.
