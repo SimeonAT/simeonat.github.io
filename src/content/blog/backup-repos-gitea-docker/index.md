@@ -25,13 +25,30 @@ Although the scripts were successful in preserving my
 Git repositories whenever I update Gitea, I got feedback stating that there must
 exist a significantly easier way to do this without having to write Python scripts
 in order to do so.
+
 Furthermore, I found the scripts tedious to use over time, especially since I had to run
 [four separate Python scripts](https://simeonat.github.io/blog/git-python-scripts/#does-it-work)
 every time I had to update Gitea. It didn't particularly help either that I had to manually go in and fix things
 every time my scripts had an issue (e.g. such as when the scripts can't clone a repository due to Internet connection issues).
 
-As a result, I realized that it was time for me to find a *proper* solution for this problem. My research has led me to
-find not only a solution to this Gitea repository backup problem, but also its underlying *root cause*.
+As a result, I realized that it was time for me to find a *proper* solution for this problem.
 
 ## The Root Problem
 
+Before I could find a solution for this problem, I first needed to investigate *why*
+this isue was happening: what is the root cause of the problem that results in the
+error message: `The Git data underlying repository cannot be read`.
+
+My research on this problem led me to a Github Gist titled
+**Restoring Git Repositories on a Gitea Instance: A Step-by-Step Guide**, written
+by Github user [Hendrik Wiese](https://gist.github.com/HWiese1980). In his blog post,
+Wiese highlights that all repositories hosted on a Gitea instance are stored in
+the `/data/git/gitea-repositories` directory. To ensure that all Git repositories
+can be read after updating Gitea, Wiese states that one must `clone` all their
+repositories locally on their computer, and then copy those repositories into
+`/data/git/gitea-repositories` after updating Gitea.
+
+This inishgt provided by Wiese allowed me to discover why I was getting the
+`The Git data underlying repository cannot be read` error message in the first place:
+my repositories were *not* present in `/data/git/gitea-repositories` of
+my Gitea instance after I updated Gitea.
