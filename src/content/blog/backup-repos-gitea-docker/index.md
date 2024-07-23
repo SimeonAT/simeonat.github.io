@@ -51,7 +51,7 @@ repositories locally on their computer, and then copy those repositories into
 
 This insights provided by Wiese allowed me to discover why I was getting the
 `The Git data underlying repository cannot be read` error message in the first place:
-the `gitea-repositories` directory was *not* present in the `/data/git` directory of
+the `/gitea-repositories` directory was *not* present in the `/data/git` directory of
 my Gitea instance after I updated Gitea. In other words, *none* of my respositories
 were saved when I updated Gitea.
 
@@ -83,8 +83,38 @@ However, since I use a Docker container to self-host
 Gitea, I realized that there was a much more convenient solution to this issue.
 Rather than having to manually move my local
 repositories in `/data/git/gitea-repositories` every time I update Gitea,
-I could just create a Docker volume that stores all of the contents in `/data/git`,
-including the `gitea-repositories` directory. Thus, whenever I update the Gitea
-Docker instance, the `gitea-repositories` will always be present (with my
-repositories inside of it) since the updated Gitea Docker container
-will use the Docker volume that contains houses everything inside `/data/git`.
+I could just create a directory that is running the Gitea Docker instance
+that I can mount to the container's `/data/git` directory.
+
+In other words, whenever I update the Gitea Docker instance, all of the repositories
+will be saved in `/data/gitea/gitea-repositories`, which in turn is saved in
+the bind mount directory.
+
+In my Synology NAS (which hosts my Gitea instance), I created a folder named
+`/docker-gitea-data-git`, which I then mount to `/data/git`. The specific mount
+settings that I specify in the Synology Container Manager is shown below.
+
+<figure>
+  <img src="/images/gitea-permanent-fix-blog-post/bind-mount.png"/>
+  <figcaption>
+    The bind mount settings to map <code>/docker-gitea-data-git</code>
+    to <code>/data/gitea</code> in my Gitea Docker instance.
+  </figcaption>
+</figure>
+
+After doing so, I followed the steps decribed by Hendrik Wiese in his
+[tutorial](https://gist.github.com/HWiese1980/2548e5c150d73d6a55bf52530f11d2d3):
+I created the `/gitea-repositories` directory, and saved all of my repositories
+inside of it.
+
+
+# TODO:
+#   1. There is more to this than meets the eye. The directory is actually
+#      called `repositories`, not `gitea-repositories`. Explain how you discovered
+#      this. You created a new Gitea repository, looked into `data/git`, and found
+#      the directory has a different name.
+#
+#   2. Divide the "Solutions" section of your blog post into different subsections.
+#
+#   3. Then resume talking about how you solve this problem using Docker bind mount.
+#
