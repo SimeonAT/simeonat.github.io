@@ -58,8 +58,8 @@ were saved when I updated Gitea.
 <figure>
   <img src="/images/gitea-permanent-fix-blog-post/no-dir.png"/>
   <figcaption>
-    The <code>gitea-repositories</code> directory was not present after
-    updating Gitea.
+    The <code>gitea-repositories</code> directory was not presen in
+    <code>/data/gitea</code> after I updated my Gitea Docker container.
   </figcaption>
 </figure>
 
@@ -67,22 +67,24 @@ Thus, the error message `The Git data underlying repository cannot be read` bega
 to make much more sense: how could the underlying repositories be read
 if there were *not even there* in the first place?
 
-## The Solution
-
-### Hendrik Wiese's Solution
+## Building Upon Hendrik Wiese's Solution
 
 At a higher level, the [solution](https://gist.github.com/HWiese1980/2548e5c150d73d6a55bf52530f11d2d3) 
-proposed by Hendrik Wiese is to save all the
-Git repositories hosted on the Gitea instance locally on your computer. Whenever
-the you encounter the `The Git data underlying repository cannot be read` error,
-you navigate to `/data/git`, and place all your locally hosted repositories into
-a newly made `gitea-repositories` directory.
-
+proposed by Hendrik Wiese is for one to copy their locally hosted repositories
+into the `/data/git/gitea-repositories` directory folder whenever they encounter
+the `The Git data underlying repository cannot be read` error.
 Although this solution fixes the problem at its core,
 I would have to save the latest versions
 of all of my Gitea repositories locally on computer, and would have to manually
 create and place all my repositories in `/data/git/gitea-repositories` everytime I
-would have to update Gitea. As a result, this led me to think about a more convenient
-solution that could address this issue.
+would have to update Gitea.
 
-### Building Upon It
+However, since I use a Docker container to self-host
+Gitea, I realized that there was a much more convenient solution to this issue.
+Rather than having to manually move my local
+repositories in `/data/git/gitea-repositories` every time I update Gitea,
+I could just create a Docker volume that stores all of the contents in `/data/git`,
+including the `gitea-repositories` directory. Thus, whenever I update the Gitea
+Docker instance, the `gitea-repositories` will always be present (with my
+repositories inside of it) since the updated Gitea Docker container
+will use the Docker volume that contains houses everything inside `/data/git`.
