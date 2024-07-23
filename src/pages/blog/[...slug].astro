@@ -20,7 +20,9 @@ export async function getStaticPaths() {
 }
 type Props = CollectionEntry<"blog">;
 
-const posts = await getCollection("blog");
+const posts = (await getCollection("blog"))
+  .filter((post) => !post.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 
 function getNextPost() {
   let postIndex;
@@ -68,7 +70,7 @@ const { Content, headings } = await post.render();
         {post.data.title}
       </h1>
     </div>
-    <TableOfContents headings={headings} />
+    {headings.length > 0 && <TableOfContents headings={headings} />}
     <article class="animate">
       <Content />
       <div class="mt-24">
