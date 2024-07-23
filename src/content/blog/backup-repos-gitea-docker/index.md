@@ -82,7 +82,7 @@ Although this solution fixes the problem at its core,
 I would have to save the latest versions
 of all of my Gitea repositories locally on computer, and would have to manually
 create and place all my repositories in `/data/git/gitea-repositories` everytime I
-would have to update Gitea. As a result, this led me to think about a more conevient
+would have to update Gitea. As a result, this led me to think about a more convenient
 solution that could address this issue.
 
 ### Building Upon It
