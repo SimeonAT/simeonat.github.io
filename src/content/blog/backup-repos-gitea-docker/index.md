@@ -1,5 +1,5 @@
 ---
-title: 'How to Backup Repositories in Gitea Docker'
+title: 'How to Backup the Git Repositories Hosted on a Gitea Docker Instance'
 description: "How I finally managed to do it without using Python scripts"
 date: 2024-06-20
 draft: false
