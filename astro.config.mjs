@@ -1,8 +1,8 @@
-import tailwind from "@astrojs/tailwind";
 import { defineConfig } from "astro/config";
-import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
+import mdx from "@astrojs/mdx";
 import pagefind from "astro-pagefind";
+import tailwindcss from "@tailwindcss/vite";
 
 import react from "@astrojs/react";
 
@@ -11,6 +11,9 @@ export default defineConfig({
   site: "https://simeonat.github.io",
   integrations: [tailwind(), sitemap(), mdx(), pagefind(),
                  react({experimentalReactChildren: true})],
+  vite: {
+    plugins: [tailwindcss()],
+  },
   markdown: {
     shikiConfig: {
       theme: "css-variables"
