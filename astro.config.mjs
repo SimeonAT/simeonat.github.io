@@ -9,7 +9,7 @@ import react from "@astrojs/react";
 // https://astro.build/config
 export default defineConfig({
   site: "https://simeonat.github.io",
-  integrations: [tailwind(), sitemap(), mdx(), pagefind(),
+  integrations: [sitemap(), mdx(), pagefind(),
                  react({experimentalReactChildren: true})],
   vite: {
     plugins: [tailwindcss()],
