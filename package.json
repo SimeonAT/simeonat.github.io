@@ -29,7 +29,6 @@
     "astro-pagefind": "^1.8.0",
     "autoprefixer": "^10.4.20",
     "clsx": "^2.1.1",
-    "flowbite-react": "^0.10.2",
     "font-awesome": "^4.7.0",
     "postcss": "^8.5.1",
     "react": "^18.3.1",

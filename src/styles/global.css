@@ -1,8 +1,5 @@
 @import 'tailwindcss';
 
-/* https://tailwindcss.com/docs/upgrade-guide#using-a-javascript-config-file */
-@config "../../tailwind.config.mjs";
-
 @plugin '@tailwindcss/typography';
 
 @custom-variant dark (&:is(.dark *));
