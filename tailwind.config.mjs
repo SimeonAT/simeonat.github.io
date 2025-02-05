@@ -1,9 +1,12 @@
-import defaultTheme from "tailwindcss/defaultTheme";
-import flowbite from "flowbite-react/tailwind";
+const defaultTheme = require("tailwindcss/defaultTheme");
+const flowbite = require("flowbite-react/tailwind");
 
-/** @type {import('tailwindcss').Config} */
-export default {
-  darkMode: "class,
+/** 
+ * Using CJS syntax made everything work.
+ * https://github.com/tailwindlabs/tailwindcss/discussions/16153
+*/
+module.exports = {
+  darkMode: "class",
   content: [
     "./src/**/*.{astro,html,js,jsx,md,mdx,svelte,ts,tsx,vue}",
     "./node_modules/flowbite/**/*.js",
