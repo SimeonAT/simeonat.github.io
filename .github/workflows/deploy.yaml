@@ -1,4 +1,4 @@
-# All the code is from: https://docs.astro.build/en/guides/deploy/github/#configure-astro-for-github-pages
+# All the code is from: https://github.com/withastro/action
 name: Deploy to GitHub Pages
 
 on:
