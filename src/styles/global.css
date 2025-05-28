@@ -53,7 +53,7 @@
   }
 
   header {
-    @apply fixed left-0 right-0 top-0 z-50 py-6;
+    @apply fixed left-0 right-0 top-0 z-50 py-3;
     @apply bg-neutral-100/75 dark:bg-neutral-900/75;
     @apply saturate-200 backdrop-blur-xs;
   }
@@ -70,11 +70,11 @@
     @apply prose prose-neutral max-w-full dark:prose-invert prose-img:mx-auto prose-img:my-auto;
     @apply prose-headings:font-semibold;
     @apply prose-headings:text-black dark:prose-headings:text-white;
-    font-size: 1.05em;
+    font-size: 1.05rem;
   }
 
   code {
-    font-size: 0.5em;
+    font-size: 0.5rem;
   }
 }
 
