@@ -7,10 +7,12 @@ draft: false
 
 When developing on ESP32 devices running OpenThread, a key feature that I needed was the ability to set the transmission (TX) power of these devices. However, I could not find a tutorial or guide on how to do so. 
 
-As a result, I wanted to write a quick guide on how you can change the TX power of ESP32 OpenThread devices.
+As a result, I wanted to write a quick guide on how you can change the TX power of ESP32 OpenThread devices, along with helpful resources.
 
 ## Setting TX Power in Code
 
 Most settings on ESP32 devices would typically be set using `Kconfig` variables and configured using `idf.py menuconfig`. However, this is no such `Kconfig` configuration for the TX power.
 
-According to the [ESP-Techpedia](https://docs.espressif.com/projects/esp-techpedia/en/latest/esp-friends/advanced-development/performance/modify-tx-power.html#thread-tx-power), the TX power must be set *programmatically*. One way to do so is using the `otPlatRadioSetTransmitPower()` class method provided by [OpenThread](https://openthread.io/reference/group/radio-config#otplatradiosettransmitpower), which under the hood is a wrapper function for the `esp_ieee802154_set_txpower()` function [implemented in ESP-IDF](https://github.com/espressif/esp-idf/blob/master/components/openthread/src/port/esp_openthread_radio.c#L441).
+According to [ESP-Techpedia](https://docs.espressif.com/projects/esp-techpedia/en/latest/esp-friends/advanced-development/performance/modify-tx-power.html#thread-tx-power), the TX power must be set *programmatically*. One way to do so is using the `otPlatRadioSetTransmitPower()` class method provided by [OpenThread](https://openthread.io/reference/group/radio-config#otplatradiosettransmitpower), which under the hood is a wrapper function for the `esp_ieee802154_set_txpower()` function [implemented in ESP-IDF](https://github.com/espressif/esp-idf/blob/master/components/openthread/src/port/esp_openthread_radio.c#L441). This makes sense since the [ESP-Techpedia](https://docs.espressif.com/projects/esp-techpedia/en/latest/esp-friends/advanced-development/performance/modify-tx-power.html#thread-tx-power) states that:
+
+> If developing directly based on the 802.15.4 MAC driver, it is recommended to adjust the transmission power of Thread through `esp_ieee802154_set_txpower`.
