@@ -17,4 +17,4 @@ According to [ESP-Techpedia](https://docs.espressif.com/projects/esp-techpedia/e
 
 > If developing directly based on the 802.15.4 MAC driver, it is recommended to adjust the transmission power of Thread through `esp_ieee802154_set_txpower`.
 
-Similarly, if you want to get the TX power value that is currently set by the device, you use the [`otPlatRadioGetTransmitPower()`](https://openthread.io/reference/group/radio-config#group__radio-config_1gadba7cca4c1176c4efeb789b1f90a5057) class method provided by OpenThhread.
+Similarly, if you want to get the TX power value that is currently set by the device, you use the [`otPlatRadioGetTransmitPower()`](https://openthread.io/reference/group/radio-config#group__radio-config_1gadba7cca4c1176c4efeb789b1f90a5057) class method provided by OpenThread. ESP-IDF implements the method as a wrapper to their [`esp_ieee802154_get_txpower()`](https://github.com/espressif/esp-idf/blob/master/components/openthread/src/port/esp_openthread_radio.c#L434) function.
