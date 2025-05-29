@@ -22,3 +22,5 @@ Similarly, if you want to get the TX power value that is currently set by the de
 ## Examples
 
 The source code for the [OpenThread CLI](https://github.com/openthread/openthread/blob/main/src/cli/cli.cpp) contains a great example on how to set and query the TX power in the [implementation](https://github.com/openthread/openthread/blob/main/src/cli/cli.cpp#L6738) for the `txpower` CLI command.
+
+In addition, [my ESP32 programming projects](https://github.com/UCSC-ThreadAscon) contain examples on how to use the OpenThread TX power class methods. 
