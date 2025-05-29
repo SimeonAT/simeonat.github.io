@@ -15,7 +15,7 @@ Guidance on how to set and query the TX power of ESP32 Thread devices can be fou
 
 ## Setting TX Power in Code
 
-Most settings on ESP32 devices would typically be set using `Kconfig` variables and configured using `idf.py menuconfig`. However, this is no such `Kconfig` configuration for the TX power.
+Most settings on ESP32 devices would typically be set using `Kconfig` variables and configured using `idf.py menuconfig`. However, there is no such `Kconfig` configuration for the TX power.
 
 According to [ESP-Techpedia](https://docs.espressif.com/projects/esp-techpedia/en/latest/esp-friends/advanced-development/performance/modify-tx-power.html#thread-tx-power), the TX power must be set *programmatically*. One way to do so is using the [`otPlatRadioSetTransmitPower()`]((https://openthread.io/reference/group/radio-config#otplatradiosettransmitpower)) class method provided by OpenThread, which under the hood is a wrapper function for the `esp_ieee802154_set_txpower()` function [implemented in ESP-IDF](https://github.com/espressif/esp-idf/blob/master/components/openthread/src/port/esp_openthread_radio.c#L441). This makes sense since the [ESP-Techpedia](https://docs.espressif.com/projects/esp-techpedia/en/latest/esp-friends/advanced-development/performance/modify-tx-power.html#thread-tx-power) states that:
 
