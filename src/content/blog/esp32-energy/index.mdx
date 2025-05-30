@@ -21,9 +21,9 @@ In this guide, I would like to share what I learned in the process of measuring 
   In this tutorial, I will be using specifically be using an [ESP32-H2 devkit](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html). Although I never measured the current of other devices beyond the ESP32-H2, I believe the steps in this tutorial should still apply to other ESP32 devkits that contain a [J5 Header](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#current-measurement) (such as an [ESP32-C6](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html)). 
 </Callout>
 
-## Choosing the Right Measurement Kit
+## Choosing the Right Measurement Tool
 
-You *can* measure the current of an ESP32 device using an oscilloscope. However, doing so is challenging, since oscilloscopes measure *voltage*, not current. To do so, you will need to *indirectly* measure the current by measuring the voltage drop of the device, and you will will need to set up a simple DC circuit in order to do so. Even then, you may not even get fully accurate measurements when your ESP32 device is operating at really low currents, such as during deep sleep, due to noise. 
+You *can* measure the current of an ESP32 device using an oscilloscope. However, doing so is challenging, since oscilloscopes measure *voltage*, not current. To do so, you will need to *indirectly* measure the current by measuring the voltage drop of the device, and you will need to set up a simple DC circuit in order to do so. Even then, you may not even get fully accurate measurements when your ESP32 device is operating at really low currents, such as during deep sleep, due to noise. 
 
 Oscilloscope are *not* designed for this task. They are really good at measuring voltage at really low timescales (e.g. in the range of micro- or nanoseconds), but they are not good at measuring voltages at really low voltages (e.g. in the range of microvolts). As a result, obtaining the current through the voltage drop measured by an oscilloscope will not get us far.
 
