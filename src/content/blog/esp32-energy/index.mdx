@@ -23,7 +23,7 @@ In this guide, I would like to share what I learned in the process of measuring 
 
 ## Choosing the Right Measurement Tool
 
-You *can* measure the current of an ESP32 device using an oscilloscope. However, doing so is challenging, since oscilloscopes measure *voltage*, not current. To do so, you will need to *indirectly* measure the current by measuring the voltage drop of the device, and you will need to set up a simple DC circuit in order to do so. Even then, you may not even get fully accurate measurements when your ESP32 device is operating at really low currents, such as during deep sleep, due to noise. 
+You *can* measure the current of an ESP32 device using an oscilloscope. However, doing so is challenging, since oscilloscopes measure *voltage*, not current. To do so, you will need to *indirectly* measure the current by measuring the voltage drop of the device. Even then, you may not even get fully accurate measurements when your ESP32 device is operating at really low currents, such as during deep sleep, due to noise. 
 
 Oscilloscope are *not* designed for this task. They are really good at measuring voltage at really low timescales (e.g. in the range of micro- or nanoseconds), but they are not good at measuring voltages at really low voltages (e.g. in the range of microvolts). As a result, obtaining the current through the voltage drop measured by an oscilloscope will not get us far.
 
@@ -31,7 +31,7 @@ To measure currents, especially really low currents, we will need to look for ot
 
 > Therefore, an ammeter suitable for measuring current in Deep-sleep mode should have low internal resistance and, ideally, switch current ranges dynamically. We recommend two options: the Joulescope ammeter and the Power Profiler Kit II from Nordic.
 
-In this tutorial, I will be using the Nordic Power Profiler Kit II (PPK2).
+In this tutorial, I will be using the [Nordic Power Profiler Kit II (PPK2)](https://www.nordicsemi.com/Products/Development-hardware/Power-Profiler-Kit-2).
 
 <figure>
   <img src="/images/esp32-energy/digilent-ad3-current.png" />
@@ -47,8 +47,10 @@ In this tutorial, I will be using the Nordic Power Profiler Kit II (PPK2).
   </figcaption>
 </figure>
 
-## How to *Not* Measure Current
+## Seting up the ESP32 Device with the PPK2
 
-## Measuring Current the Right Way
+### How to *Not* Measure Current
+
+### Measuring Current the Right Way
 
 ## Helpful Resources
