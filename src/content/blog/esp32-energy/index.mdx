@@ -1,5 +1,5 @@
 ---
-title: 'How to Measure the Current of ESP32 Thread Devices'
+title: 'How to Measure the Current of ESP32 Devices'
 description: "Tutorial on how to properly measure the enery consumption of ESP32 devices running OpenThread."
 date: 2024-06-5
 draft: false
@@ -9,7 +9,7 @@ import Callout from "@/components/Callout.astro";
 
 ---
 
-The energy consumption of a device is especially important when those devices are Internet of Things (IoT) devices. ESP32 Thread devices that function as Sleepy End Devices (SEDs) or Synchronized Sleepy End Devices (SSEDs) are no exception.
+The energy consumption of a device is especially important when those devices are Internet of Things (IoT) devices. This fact applies to devices running ESP32 hardware as well.
 
 However, you cannot just simply measure the current of an ESP32 device by simply connecting it to an oscilloscope, Nordic Power Profiler Kit II, Joulescope, or your measurement device of choice. If you are not careful, you may even risk damaging the device.
 
@@ -23,4 +23,6 @@ In this guide, I would like to share what I learned in the process of measuring 
 
 ## Choosing the Right Measurement Kit
 
-You can measure the current of an ESP32 device using an oscilloscope. However, doing so can be challenging, since oscilloscopes measure *voltage*, not current. Using an oscilloscope requires the *indirect* measurement of current by measuring the voltage drop.
+You *can* measure the current of an ESP32 device using an oscilloscope. However, doing so is challenging, since oscilloscopes measure *voltage*, not current. To do so, you will need to *indirectly* measure the current by measuring the voltage drop of the device, and you will will need to set up a simple DC circuit in order to do so. Even then, you may not even get fully accurate measurements when you ESP32 device is operating at really low currents, such as during deep sleep, due to noise. 
+
+The reason why it is so difficult
