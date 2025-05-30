@@ -27,7 +27,7 @@ You *can* measure the current of an ESP32 device using an oscilloscope. However,
 
 Oscilloscope are *not* designed for this task. They are really good at measuring voltage at really low timescales (e.g. in the range of micro- or nanoseconds), but they are not good at measuring voltages at really low voltages (e.g. in the range of microvolts). As a result, obtaining the current through the voltage drop measured by an oscilloscope will not get us far.
 
-To measure currents, especially really low currents, we will need to look for other tools. To find these tools, we not need look further than the [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32h2/api-guides/current-consumption-measurement-modules.html#how-to-choose-an-appropriate-ammeter):
+To measure currents, especially really low currents, we will need to look for other tools. To find these tools, we need not look further than the [ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32h2/api-guides/current-consumption-measurement-modules.html#how-to-choose-an-appropriate-ammeter):
 
 > Therefore, an ammeter suitable for measuring current in Deep-sleep mode should have low internal resistance and, ideally, switch current ranges dynamically. We recommend two options: the Joulescope ammeter and the Power Profiler Kit II from Nordic.
 
