@@ -13,11 +13,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
   <Container>
     <div class="flex flex-wrap justify-between gap-y-2">
       <Link href="/" underline={false}>
-        <div class="font-semibold text-xl">
+        <div class="font-semibold text-2xl">
           {SITE.TITLE}
         </div>
       </Link>
-      <nav class="flex items-center gap-1 text-sm">
+      <nav class="flex items-center gap-1 text-xl">
         <!--
           All you need to display of PDF is to put the PDF in the "/public" directory:
           https://answers.netlify.com/t/cant-load-pdf-on-static-astro-site/111152/2   
@@ -33,7 +33,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
         <button
           id="magnifying-glass"
           aria-label="Search"
-          class="flex items-center rounded border border-black/15 bg-neutral-100 px-2 py-1 text-lg transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:bg-neutral-900 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white mr-3 ml-3"
+          class="flex items-center rounded border border-black/15 bg-neutral-100 px-2 py-1 text-xl transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:bg-neutral-900 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white mr-3 ml-3"
         >
           <div class="mr-2">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
