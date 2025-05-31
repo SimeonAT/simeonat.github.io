@@ -60,7 +60,14 @@ In this tutorial, I will be using the [Nordic Power Profiler Kit II (PPK2)](http
 
 ## How to *Not* Measure Current
 
-You set up the ESP32 with the PPK2 by using jumper wires to connect the `VCC` port of the PPK2 to the `5V0` pin of the ESP32 device, and another jumper wire to connect the `GND` port of the PPK2 to `GND` pin on the ESP32. 
+You set up an ESP32 with the PPK2 by using jumper wires to connect:
+
+ * the `VCC` port of the PPK2 to the `5V0` pin of the ESP32 device, and
+ * the `GND` port of the PPK2 to `GND` pin on the ESP32.
+
+In this configuration, you can use the PPK2 to measure the current of the ESP32 device while the PPK2 itself is providing a 5V of power. This is how I initially approached the measurement of my ESP32-H2 device.
+
+However, this approach will *not* work when the ESP32 is consuming really low currents in the uA range.
 
 ## Measuring Current the Right Way
 
