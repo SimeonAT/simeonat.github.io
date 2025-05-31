@@ -90,7 +90,7 @@ These inaccurate low current measurements occur when the [**J5 header**](https:/
 </figure>
 
 <Callout type="error">
-  In the picture above shown in the right, I showed my ESP32-H2 with the J5 header pin while its UART port was connected to USB. **DO NOT DO THIS![^4] Removing the J5 header from an ESP32-H2 while it is being supplied with 5V of power [could damage the device](https://esp32.com/viewtopic.php?t=40052#p132759)**. Although I did measure the current of other ESP32 devices, I believe this warning will still apply to other ESP32 devices which contain a J5 header (such as the [ESP32-C6](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#current-measurement)).
+  In the picture above shown in the right, I showed my ESP32-H2 with the J5 header pin while its UART port was connected to USB. **DO NOT DO THIS![^4] Removing the J5 header from an ESP32-H2 while it is being supplied with 5V of power [could damage the device](https://esp32.com/viewtopic.php?t=40052#p132759)**. As I will discuss later, you will need to supply the ESP32-H2 with 3.3V of power when the J5 header is removed. Even though I did not measure the current of other ESP32 devices, I believe this warning will still apply to any ESP32 devkits which contains a J5 header (such as the [ESP32-C6](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#current-measurement)).
 </Callout>
 
 In order to accurately measure the current of an ESP32-H2, the J5 header pin will need to be removed [^3] from the ESP32-H2 for the duration in which the PPK2 is measuring the current of the device.
