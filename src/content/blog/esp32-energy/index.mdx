@@ -60,14 +60,14 @@ In this tutorial, I will be using the [Nordic Power Profiler Kit II (PPK2)](http
 
 ## How to *Not* Measure Low Currents
 
-You set up an ESP32 with the PPK2 by using jumper wires to connect:
+You set up an ESP32-H2 with the PPK2 by using jumper wires to connect:
 
  * the `VCC` port of the PPK2 to the `5V0` [^1] pin of the ESP32 device, and
  * the `GND` port of the PPK2 to `GND` pin on the ESP32.
 
-In this configuration, you can use the PPK2 to measure the current of the ESP32 device while the PPK2 itself is providing 5V of power. This is how I initially approached the measurement of my ESP32-H2 device.
+In this configuration, you can use the PPK2 to measure the current of the ESP32-H2 while the PPK2 itself is providing 5V of power. This is how I initially approached the measurement of my ESP32-H2 device.
 
-However, this approach will *not* work when the ESP32 is consuming really low currents in the uA range: the PPK2 will report much higher currents than expected.
+However, this approach will *not* work when the ESP32-H2 is consuming really low currents in the uA range: the PPK2 will report much higher currents than expected.
 
 When measuring the deep sleep current of my ESP32-H2 when it ran the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep), the PPK2 reported a current of ~1.25 mA, when it should have instead measured the current at ~7 uA, the expected value of the deep sleep current for an ESP32-H2 [^2].
 
@@ -77,6 +77,21 @@ When measuring the deep sleep current of my ESP32-H2 when it ran the [ESP32 Open
     When the ESP32-H2 runs to the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep) and has its `5V0` pin connected to the `VCC` port of the PPK2, the current measured by the PPK2 is around ~1.25 mA, rather than ~7 uA.
   </figcaption>
 </figure>
+
+### The J5 Header
+
+These inaccurate low current measurements occur when the **J5 header** pin of the ESP32-H2 has *not* been removed.
+
+<figure>
+  <img src="/images/esp32-energy/esp32h2-j5-header.png" /> 
+  <figcaption>
+    The ESP32-H2 when the J5 header pin. The power-on LED if off when the J5 header pin was removed, even though the ESP32-H2 module itself is having its power supplied by USB.
+  </figcaption>
+</figure>
+
+
+{/* The J5 header is used to connect the ESP32-H2 SoC to the GPIO pins of the rest of the devkit. When the J5 header pin is removed, the  */}
+
 
 {/* ## Measuring Current the Right Way
 
