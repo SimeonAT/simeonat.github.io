@@ -80,26 +80,26 @@ When measuring the deep sleep current of my ESP32-H2 when it ran the [ESP32 Open
 
 ### The J5 Header
 
-These inaccurate low current measurements occur when the [**J5 header**](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#current-measurement) pin of the ESP32-H2 has *not* been removed.
+These inaccurate low current measurements occur when the [**J5 header**](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#current-measurement) jumper of the ESP32-H2 has *not* been removed.
 
 <figure>
   <img src="/images/esp32-energy/esp32h2-j5-header.png" /> 
   <figcaption>
-    The J5 header of the ESP32-H2. The power-on LED if off when the J5 header was removed, even though the ESP32-H2 module itself is having its power supplied by USB.
+    The J5 header of the ESP32-H2. The power-on LED if off when the J5 header jumper was removed, even though the ESP32-H2 module itself was having its power supplied by USB.
   </figcaption>
 </figure>
 
 <Callout type="error">
-  In the picture above shown in the right, I showed my ESP32-H2 with the J5 header while its UART port was connected to USB. **DO NOT DO THIS![^4] Removing the J5 header from an ESP32-H2 while it is being supplied with 5V of power [could damage the device](https://esp32.com/viewtopic.php?t=40052#p132759). This applies to USB serial and UART connections as well, as USB connections supply 5V of power.** You will need to supply the ESP32-H2 with 3.3V of power when the J5 header is removed. Even though I did not measure the current of other ESP32 devices, I believe this warning will still apply to any ESP32 devkits that contain a J5 header (such as the [ESP32-C6](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#current-measurement)).
+  In the picture above shown in the right, I showed my ESP32-H2 with the J5 jumper removed while its UART port was connected to USB. **DO NOT DO THIS![^4] Removing the J5 jumper from an ESP32-H2 while it is being supplied with 5V of power [could damage the device](https://esp32.com/viewtopic.php?t=40052#p132759). This applies to USB serial and UART connections as well, as USB connections supply 5V of power.** You will need to supply the ESP32-H2 with 3.3V of power when the J5 jumper is removed. Even though I did not measure the current of other ESP32 devices, I believe this warning will still apply to any ESP32 devkits that contain a J5 header (such as the [ESP32-C6](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#current-measurement)).
 </Callout>
 
-In order to accurately measure the current of an ESP32-H2, the J5 header will need to be removed [^3] from the ESP32-H2 for the duration in which the PPK2 is measuring the current of the device.
+In order to accurately measure the current of an ESP32-H2, the J5 jumper will need to be removed [^3] from the ESP32-H2 for the duration in which the PPK2 is measuring the current of the device.
 
 ## Measuring Small Currents Correctly
 
 To properly measure low currents using the PPK2, we will need the following setup:
 
-* Connect the `VCC` port of the PPK2 to the `3V3`[^5] pin of the ESP32-H2, or one of the two J5 pins that are visible when the J5 header has been removed.
+* Connect the `VCC` port of the PPK2 to the `3V3`[^5] pin of the ESP32-H2, or to one of the two J5 pins that are visible when the J5 jumper has been removed.
 
 * Connect the `GND` port of the PPK2 to the `GND` pin of the ESP32-H2.
 
