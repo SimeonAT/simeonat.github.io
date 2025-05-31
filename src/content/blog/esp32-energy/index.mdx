@@ -69,12 +69,12 @@ In this configuration, you can use the PPK2 to measure the current of the ESP32-
 
 However, this approach will *not* work when the ESP32-H2 is consuming really low currents in the uA range: the PPK2 will report much higher currents than expected.
 
-When measuring the deep sleep current of my ESP32-H2 when it ran the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep), the PPK2 reported a current of ~1.25 mA, when it should have instead measured the current at ~7 uA, the expected value of the deep sleep current for an ESP32-H2 [^2].
+When measuring the deep sleep current of my ESP32-H2 when it ran the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep), the PPK2 reported a current of ~1.21 mA, when it should have instead measured the current at ~7 uA, the expected value of the deep sleep current for an ESP32-H2 [^2].
 
 <figure>
   <img src="/images/esp32-energy/esp32-inaccurate-deep-sleep-current.png" /> 
   <figcaption>
-    When the ESP32-H2 runs to the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep) and has its `5V0` pin connected to the `VCC` port of the PPK2, the current measured by the PPK2 is around ~1.25 mA, rather than ~7 uA.
+    When the ESP32-H2 runs to the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep) and has its `5V0` pin connected to the `VCC` port of the PPK2, the current measured by the PPK2 is around ~1.21 mA, rather than ~7 uA.
   </figcaption>
 </figure>
 
@@ -90,12 +90,12 @@ These inaccurate low current measurements occur when the [**J5 header**](https:/
 </figure>
 
 <Callout type="error">
-  In the picture above shown in the right, I showed my ESP32-H2 with the J5 header pin while its UART port was connected to USB. **DO NOT DO THIS![^4] Removing the J5 header from an ESP32-H2 while it is being supplied with 5V of power [could damage the device](https://esp32.com/viewtopic.php?t=40052#p132759)**. As I will discuss later, you will need to supply the ESP32-H2 with 3.3V of power when the J5 header is removed. Even though I did not measure the current of other ESP32 devices, I believe this warning will still apply to any ESP32 devkits which contains a J5 header (such as the [ESP32-C6](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#current-measurement)).
+  In the picture above shown in the right, I showed my ESP32-H2 with the J5 header pin while its UART port was connected to USB. **DO NOT DO THIS![^4] Removing the J5 header pin from an ESP32-H2 while it is being supplied with 5V of power [could damage the device](https://esp32.com/viewtopic.php?t=40052#p132759)**. You will need to supply the ESP32-H2 with 3.3V of power when the J5 header is removed. Even though I did not measure the current of other ESP32 devices, I believe this warning will still apply to any ESP32 devkits that contain a J5 header (such as the [ESP32-C6](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#current-measurement)).
 </Callout>
 
 In order to accurately measure the current of an ESP32-H2, the J5 header pin will need to be removed [^3] from the ESP32-H2 for the duration in which the PPK2 is measuring the current of the device.
 
-## Measuring Small Currents the Correct Way
+## Measuring Small Currents Correctly
 
 To properly measure low currents using the PPK2, we will need to the following setup:
 
@@ -103,10 +103,26 @@ To properly measure low currents using the PPK2, we will need to the following s
 
 * Connect the `GND` port of the PPK2 to the `GND` pin of the ESP32-H2.
 
+Set the PPK2 to provide 3.3V of power to the ESP32-H2. **Do not set the PPK2 to provide 5V of power, as [doing so can damage the device](https://esp32.com/viewtopic.php?t=40052#p132759).**. After following these steps, the PPK2 will be able to accurately measure low currents.
 
-{/* ## Measuring Current the Right Way
+<figure>
+  <img src="/images/esp32-energy/esp32-ppk2-accurate-currents.png" /> 
+  <figcaption>
+    The PPK2 measured the deep sleep current of my ESP32-H2 at around ~7.8-8.84 uA after the J5 header was removed. Such measurements are much closer to the expected deep sleep current of 7 uA as stated in the [ESP32-H2 dataasheet](https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf).  
+  </figcaption>
+</figure>
 
-## Helpful Resources */}
+## Helpful Resources
+
+In this section, I compile the helpful resources that I used when I was in the process of figuring out how to properly measure the low currents of my ESP32-H2 during deep sleep with the PPK2.
+
+* The [ESP32-H2 devkit Documentation](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html), particularly the section about the [J5 header](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#current-measurement).
+
+* The [conversation I had with Espressif engineer `Sprite` in the ESP32 forums](esp32.com/viewtopic.php?t=40052) about the purpose of the J5 header. I want to thank `Sprite` for taking the time to teach me about the J5 header.
+
+* The ["Current Consumption Measurement of Modules" page in the ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/current-consumption-measurement-modules.html). This webpage describes the tools recommended by Espressif to measure the current of ESP32 devices, along with discussing the general approach to measuring the current of such devices.
+
+* The [conversation I had in the Digilent forums](https://forum.digilent.com/topic/29202-how-to-use-the-ad3-current-power-adapter-on-an-esp32-h2/) when I was figuring out how I could accurately measure the deep sleep current of an ESP32-H2 using the Analog Discovery 3. I would like to thank Digilent engineers `JColvin` and `attila` for teaching me how to use the AD3 with the Current & Power Adapter to measure the current of my ESP32-H2 devkit.
 
 ---
 [^1]: According to the [ESP32-H2 GPIO pin layout diagram](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#pin-layout), the `5V0` GPIO pin is used to provide 5V of power to the ESP32-H2. Since the [`5V0` pin also appears in the ESP32-C6](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#pin-layout), I use the notation `5V0` to generally refer to the GPIO pin that allows an ESP32 device to be supplied with 5V of power.
