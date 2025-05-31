@@ -97,7 +97,7 @@ In order to accurately measure the current of an ESP32-H2, the J5 header pin wil
 
 ## Measuring Small Currents Correctly
 
-To properly measure low currents using the PPK2, we will need to the following setup:
+To properly measure low currents using the PPK2, we will need the following setup:
 
 * Connect the `VCC` port of the PPK2 to the `3V3`[^5] pin of the ESP32-H2.
 
@@ -120,7 +120,7 @@ In this section, I compile the helpful resources that I used when I was in the p
 
 * The [conversation I had with Espressif engineer `Sprite` in the ESP32 forums](esp32.com/viewtopic.php?t=40052) about the purpose of the J5 header. I want to thank `Sprite` for taking the time to teach me about the J5 header.
 
-* The ["Current Consumption Measurement of Modules" page in the ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/current-consumption-measurement-modules.html). This webpage describes the tools recommended by Espressif to measure the current of ESP32 devices, along with discussing the general approach to measuring the current of such devices.
+* The [*Current Consumption Measurement of Modules* page in the ESP-IDF Programming Guide](https://docs.espressif.com/projects/esp-idf/en/stable/esp32/api-guides/current-consumption-measurement-modules.html). This webpage describes the tools recommended by Espressif to measure the current of ESP32 devices, along with discussing the general approach to measuring the current of such devices.
 
 * The [conversation I had in the Digilent forums](https://forum.digilent.com/topic/29202-how-to-use-the-ad3-current-power-adapter-on-an-esp32-h2/) when I was figuring out how I could accurately measure the deep sleep current of an ESP32-H2 using the Analog Discovery 3. I would like to thank Digilent engineers `JColvin` and `attila` for teaching me how to use the AD3 with the Current & Power Adapter to measure the current of my ESP32-H2 devkit.
 
