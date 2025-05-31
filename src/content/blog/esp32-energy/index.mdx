@@ -80,17 +80,18 @@ When measuring the deep sleep current of my ESP32-H2 when it ran the [ESP32 Open
 
 ### The J5 Header
 
-These inaccurate low current measurements occur when the **J5 header** pin of the ESP32-H2 has *not* been removed.
+These inaccurate low current measurements occur when the [**J5 header**](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#current-measurement) pin of the ESP32-H2 has *not* been removed.
 
 <figure>
   <img src="/images/esp32-energy/esp32h2-j5-header.png" /> 
   <figcaption>
-    The ESP32-H2 when the J5 header pin. The power-on LED if off when the J5 header pin was removed, even though the ESP32-H2 module itself is having its power supplied by USB.
+    The J5 header pin of the ESP32-H2. The power-on LED if off when the J5 header pin was removed, even though the ESP32-H2 module itself is having its power supplied by USB.
   </figcaption>
 </figure>
 
+In order to accurately measure the current of an ESP32-H2, the J5 header pin will need to be removed [^3] from the ESP32-H2 for the duration in which the PPK2 is measuring the current of the device.
 
-{/* The J5 header is used to connect the ESP32-H2 SoC to the GPIO pins of the rest of the devkit. When the J5 header pin is removed, the  */}
+## Measuring Low Currents the Correct Way
 
 
 {/* ## Measuring Current the Right Way
@@ -101,3 +102,5 @@ These inaccurate low current measurements occur when the **J5 header** pin of th
 [^1]: According to the [ESP32-H2 GPIO pin layout diagram](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#pin-layout), the `5V0` GPIO pin is used to provide 5V of power to the ESP32-H2. Since the [`5V0` pin also appears in the ESP32-C6](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#pin-layout), I use the term `5V0` to generally refer to the GPIO pin that allows an ESP32 device to be supplied with 5V of power.
 
 [^2]: Table 5-9 of the[ ESP32-H2 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf) states that the expected deep sleep current for the device is 7 uA. Furthermore, the screenshot shown in the `README` for the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep) shows that when the [Joulescope energy analyzer](https://www.joulescope.com/) was used to measure the deep sleep current of an ESP32 802.15.4 device running the program, it reported currents in ~7-8 uA range.
+
+[^3]: I learned about the purpose of the J5 header from the [ESP32-H2 Devkit documentation](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#current-measurement), and in the [converstion I had with Espressif engineer `Sprite` on the ESP32 forums](https://esp32.com/viewtopic.php?t=40052).
