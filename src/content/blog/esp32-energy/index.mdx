@@ -97,16 +97,24 @@ In order to accurately measure the current of an ESP32-H2, the J5 header pin wil
 
 ## Measuring Small Currents the Correct Way
 
+To properly measure low currents using the PPK2, we will need to the following setup:
+
+* Connect the `VCC` port of the PPK2 to the `3V3`[^5] pin of the ESP32-H2.
+
+* Connect the `GND` port of the PPK2 to the `GND` pin of the ESP32-H2.
+
 
 {/* ## Measuring Current the Right Way
 
 ## Helpful Resources */}
 
 ---
-[^1]: According to the [ESP32-H2 GPIO pin layout diagram](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#pin-layout), the `5V0` GPIO pin is used to provide 5V of power to the ESP32-H2. Since the [`5V0` pin also appears in the ESP32-C6](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#pin-layout), I use the term `5V0` to generally refer to the GPIO pin that allows an ESP32 device to be supplied with 5V of power.
+[^1]: According to the [ESP32-H2 GPIO pin layout diagram](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#pin-layout), the `5V0` GPIO pin is used to provide 5V of power to the ESP32-H2. Since the [`5V0` pin also appears in the ESP32-C6](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#pin-layout), I use the notation `5V0` to generally refer to the GPIO pin that allows an ESP32 device to be supplied with 5V of power.
 
 [^2]: Table 5-9 of the[ ESP32-H2 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf) states that the expected deep sleep current for the device is 7 uA. Furthermore, the screenshot shown in the `README` for the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep) shows that when the [Joulescope energy analyzer](https://www.joulescope.com/) was used to measure the deep sleep current of an ESP32 802.15.4 device running the program, it reported currents in ~7-8 uA range.
 
 [^3]: I learned about the purpose of the J5 header from the [ESP32-H2 Devkit documentation](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#current-measurement), and in the [converstion I had with Espressif engineer `Sprite` on the ESP32 forums](https://esp32.com/viewtopic.php?t=40052).
 
 [^4]: At the time I took the picture, I did not know that powering my ESP32-H2 under 5V while the J5 header was removed would cause any issue. It was not until I talked to [Espressif engineer `Sprite` on the ESP32 forums](https://esp32.com/viewtopic.php?t=40052#p132759) that doing so could damage my ESP32-H2 device.
+
+[^5]: According to the [ESP32-H2 GPIO pin layout diagram](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#pin-layout), the `3V3` GPIO pin is used to provide 3.3V of power to the ESP32-H2. Since the [`3V3` pin also appears in the ESP32-C6](https://docs.espressif.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#pin-layout), I use the notation `3V3` to generally refer to the GPIO pin that allows an ESP32 device to be supplied with 3.3 of power.
