@@ -89,9 +89,13 @@ These inaccurate low current measurements occur when the [**J5 header**](https:/
   </figcaption>
 </figure>
 
+<Callout type="error">
+  In the picture above shown in the right, I showed my ESP32-H2 with the J5 header pin while its UART port was connected to USB. **DO NOT DO THIS![^4] Removing the J5 header from an ESP32-H2 while it is being supplied with 5V of power [could damage the device](https://esp32.com/viewtopic.php?t=40052#p132759)**. Although I did measure the current of other ESP32 devices, I believe this warning will still apply to other ESP32 devices which contain a J5 header (such as the [ESP32-C6](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html#current-measurement)).
+</Callout>
+
 In order to accurately measure the current of an ESP32-H2, the J5 header pin will need to be removed [^3] from the ESP32-H2 for the duration in which the PPK2 is measuring the current of the device.
 
-## Measuring Low Currents the Correct Way
+## Measuring Small Currents the Correct Way
 
 
 {/* ## Measuring Current the Right Way
@@ -104,3 +108,5 @@ In order to accurately measure the current of an ESP32-H2, the J5 header pin wil
 [^2]: Table 5-9 of the[ ESP32-H2 datasheet](https://www.espressif.com/sites/default/files/documentation/esp32-h2_datasheet_en.pdf) states that the expected deep sleep current for the device is 7 uA. Furthermore, the screenshot shown in the `README` for the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep) shows that when the [Joulescope energy analyzer](https://www.joulescope.com/) was used to measure the deep sleep current of an ESP32 802.15.4 device running the program, it reported currents in ~7-8 uA range.
 
 [^3]: I learned about the purpose of the J5 header from the [ESP32-H2 Devkit documentation](https://espressif-docs.readthedocs-hosted.com/projects/esp-dev-kits/en/latest/esp32h2/esp32-h2-devkitm-1/user_guide.html#current-measurement), and in the [converstion I had with Espressif engineer `Sprite` on the ESP32 forums](https://esp32.com/viewtopic.php?t=40052).
+
+[^4]: At the time I took the picture, I did not know that powering my ESP32-H2 under 5V while the J5 header was removed would cause any issue. It was not until I talked to [Espressif engineer `Sprite` on the ESP32 forums](https://esp32.com/viewtopic.php?t=40052#p132759) that doing so could damage my ESP32-H2 device.
