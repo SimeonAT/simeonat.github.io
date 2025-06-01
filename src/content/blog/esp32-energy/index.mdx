@@ -63,7 +63,7 @@ In this tutorial, I will be using the [Nordic Power Profiler Kit II (PPK2)](http
 You can set up an ESP32-H2 with the PPK2 by using jumper wires to connect:
 
  * the `VCC` port of the PPK2 to the `5V0` [^1] pin of the ESP32 device, and
- * the `GND` port of the PPK2 to `GND` pin on the ESP32.
+ * the `GND` port of the PPK2 to the `GND` pin on the ESP32.
 
 In this configuration, you can use the PPK2 to measure the current of the ESP32-H2 while the PPK2 itself is providing 5V of power. This is how I initially approached the measurement of my ESP32-H2 device.
 
@@ -74,7 +74,7 @@ When measuring the deep sleep current of my ESP32-H2 when it ran the [ESP32 Open
 <figure>
   <img src="/images/esp32-energy/esp32-inaccurate-deep-sleep-current.png" /> 
   <figcaption>
-    When the ESP32-H2 runs to the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep) and has its `5V0` pin connected to the `VCC` port of the PPK2, the current measured by the PPK2 is around ~1.21 mA, rather than ~7 uA.
+    When the ESP32-H2 runs the [ESP32 OpenThread boilerplate deep sleep SED program](https://github.com/espressif/esp-idf/tree/master/examples/openthread/ot_sleepy_device/deep_sleep) and has its `5V0` pin connected to the `VCC` port of the PPK2, the current measured by the PPK2 is around ~1.21 mA, rather than ~7 uA.
   </figcaption>
 </figure>
 
@@ -85,7 +85,7 @@ These inaccurate low current measurements occur when the [**J5 header**](https:/
 <figure>
   <img src="/images/esp32-energy/esp32h2-j5-header.png" /> 
   <figcaption>
-    The J5 header of the ESP32-H2. The power-on LED if off when the J5 header jumper was removed, even though the ESP32-H2 module itself was having its power supplied by USB.
+    The J5 header of the ESP32-H2. The power-on LED is off when the J5 header jumper is removed, even though the ESP32-H2 module itself was having its power supplied by USB.
   </figcaption>
 </figure>
 
