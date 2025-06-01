@@ -87,7 +87,7 @@ Although the codebase is made up of multiple scripts, the responsibility of actu
 All of the other Python scripts (with the exception of `e2e.py`, which is used for testing purposes -  later), are *services*. That is,
 their sole purpose is to provide `main.py` with the necessary functions that it will use to do its job of updating the Docker containers.
 
-With that in mind, let us now dive into the fmore on thisunctionality of each of the services used in `main.py`.
+With that in mind, let us now dive into the more on the functionality for each of the services used in `main.py`.
 
 #### The Image Service
 
