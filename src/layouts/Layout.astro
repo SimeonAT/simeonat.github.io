@@ -20,6 +20,14 @@ const { title, description } = Astro.props;
     <meta name="google-site-verification" content="5rM2mnjfp9QUDwPyqW9LBdEk-vhA53w_LRtlkEFMB4Y" />
   </head>
   <body>
+    <noscript>
+      <style>
+        .animate{
+          opacity:1;
+          translate: var(--tw-translate-x) calc(var(--spacing) * 0);
+        }
+      </style>
+    </noscript>
     <Header />
     <main>
       <slot />
