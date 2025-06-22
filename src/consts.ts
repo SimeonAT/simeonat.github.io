@@ -20,13 +20,13 @@ export const HOME: Metadata = {
 export const BLOG: Metadata = {
   TITLE: "Blog",
   DESCRIPTION:
-    "Blog posts on research and programming projets that I am currently working on.",
+    "Blog posts on research and programming projects that I am currently working on.",
 };
 
 export const PERSONAL: Metadata = {
   TITLE: "Personal",
   DESCRIPTION:
-    "Blog posts where I talk about my hobbies and other miscellaneous topics.",
+    "Blog posts where I talk about my hobbies and other miscellaneous topics outisde of computer science.",
 };
 
 export const PROJECTS: Metadata = {
