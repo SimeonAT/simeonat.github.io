@@ -19,9 +19,9 @@ const personal = (await getCollection("personal"))
         </div>
         <ul class="animate not-prose flex flex-col gap-4">
           {
-            personal.map((personal) => (
+            personal.map((post) => (
               <li>
-                <ArrowCard entry={personal} />
+                <ArrowCard entry={post} />
               </li>
             ))
           }
