@@ -1,1 +1,32 @@
-<div>Hello world!</div>
+---
+import { getCollection } from "astro:content";
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/Container.astro";
+import ArrowCard from "@components/ArrowCard.astro";
+import { PERSONAL } from "@consts";
+
+const personal = (await getCollection("personal"))
+  .filter((personal) => !personal.data.draft)
+  .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
+---
+
+<Layout title={PERSONAL.TITLE} description={PERSONAL.DESCRIPTION}>
+  <Container>
+    <aside data-pagefind-ignore>
+      <div class="space-y-10">
+        <div class="animate font-semibold text-black dark:text-white">
+          Personal
+        </div>
+        <ul class="animate not-prose flex flex-col gap-4">
+          {
+            personal.map((personal) => (
+              <li>
+                <ArrowCard entry={personal} />
+              </li>
+            ))
+          }
+        </ul>
+      </div>
+    </aside>
+  </Container>
+</Layout>
