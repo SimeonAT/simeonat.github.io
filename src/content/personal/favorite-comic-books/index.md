@@ -1,6 +1,6 @@
 ---
 title: 'Favorite Comic Books'
-description: "A list of all of my favorite comic book series."
+description: "My favorite comic book series of all time."
 date: 06-22-2025
 draft: false
 ---
