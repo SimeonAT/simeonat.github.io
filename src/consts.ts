@@ -26,7 +26,7 @@ export const BLOG: Metadata = {
 export const PERSONAL: Metadata = {
   TITLE: "Personal",
   DESCRIPTION:
-    "Hobbies and other miscellaneous topics.",
+    "Discussions on my hobbises and other non-technical topics.",
 };
 
 export const PROJECTS: Metadata = {
