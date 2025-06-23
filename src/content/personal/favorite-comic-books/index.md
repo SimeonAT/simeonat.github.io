@@ -13,9 +13,9 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 3. [Ultimates](https://www.marvel.com/comics/series/38865/ultimates_2024_present) by Deniz Camp **(Ongoing)**.
 
-4. [Ultimate Invasion]() by Jonathan Hickman.
+4. [Ultimate Invasion](https://www.marvel.com/comics/series/33281/ultimate_invasion_2023_-_present) by Jonathan Hickman.
 
-5. [Ultimate Spider-Man]() by Jonathan Hickman **(Ongoing)**.
+5. [Ultimate Spider-Man](https://www.marvel.com/comics/series/38809/ultimate_spider-man_2024_-_present) by Jonathan Hickman **(Ongoing)**.
 
 6. [The Omega Men](https://www.dcuniverseinfinite.com/comics/series/the-omega-men-2015-2016/60b3893d-c9df-47f5-b1ae-ffbca548bf29) by Tom King.
 
@@ -31,7 +31,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 12.  [Fantastic Four](https://www.marvel.com/comics/series/421/fantastic_four_1998_2012) and [FF](https://www.marvel.com/comics/series/13440/ff_2011_2012) by Jonathan Hickman.
 
-13.  [Absolute Batman](https://www.dc.com/comics/absolute-batman-2024/absolute-batman-1) by Scott Snyder and Nick Dragotta.
+13.  [Absolute Batman](https://www.dc.com/comics/absolute-batman-2024/absolute-batman-1) by Scott Snyder and Nick Dragotta **(Ongoing)**.
 
 14. X-Men by Jonathan Hickman: [House of X](https://www.marvel.com/comics/series/26338/house_of_x_2019), [Powers of X](https://www.marvel.com/comics/series/26340/powers_of_x_2019), [Inferno](https://www.marvel.com/comics/series/32954/inferno_2021_2022), and [X-Men](https://www.marvel.com/comics/series/27567/xmen_2019_2021)
 
@@ -45,10 +45,16 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 19. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
 
-20. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
+20. [Ultimate X-Men](https://www.marvel.com/comics/series/38817/ultimate_xmen_2024_present) by Peach Momoko **(Ongoing)**.
 
-21. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
+21. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
 
-22. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+22. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
 
-23. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
+23. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
+
+24. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett and Andy Lanning.
+
+25. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+
+26. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
