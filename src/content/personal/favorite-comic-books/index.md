@@ -19,7 +19,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 6. [The Omega Men](https://www.dcuniverseinfinite.com/comics/series/the-omega-men-2015-2016/60b3893d-c9df-47f5-b1ae-ffbca548bf29) by Tom King.
 
-7. [Ultimate Spider-Man: Incursion](https://www.marvel.com/comics/series/43373/ultimate_spiderman_incursion_2025_present) by Deniz Kampf **(Ongoing)**.
+7. [Ultimate Spider-Man: Incursion](https://www.marvel.com/comics/series/43373/ultimate_spiderman_incursion_2025_present) by Deniz Kamp **(Ongoing)**.
 
 8. [Ultimate Wolverine](https://www.marvel.com/comics/series/42303/ultimate_wolverine_2025_present) by Christopher Condon **(Ongoing)**.
 
@@ -53,18 +53,20 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 23. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
 
-24. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
+24. [Children of the Vault](https://www.marvel.com/comics/series/36896/children_of_the_vault_2023_present) by Deniz Kamp.
 
-25. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
+25. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
 
-26. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett and Andy Lanning.
+26. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
 
-27. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+27. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett and Andy Lanning.
 
-28. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
+28. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
 
-29. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
+29. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
 
-30. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+30. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
 
-31. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
+31. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+
+32. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
