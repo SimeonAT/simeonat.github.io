@@ -19,7 +19,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 6. [The Omega Men](https://www.dcuniverseinfinite.com/comics/series/the-omega-men-2015-2016/60b3893d-c9df-47f5-b1ae-ffbca548bf29) by Tom King.
 
-7. [Ultimate Spider-Man: Incursion](https://www.marvel.com/comics/series/43373/ultimate_spiderman_incursion_2025_present) by Deniz Kamp **(Ongoing)**.
+7. [Ultimate Spider-Man: Incursion](https://www.marvel.com/comics/series/43373/ultimate_spiderman_incursion_2025_present) by Deniz Camp **(Ongoing)**.
 
 8. [Ultimate Wolverine](https://www.marvel.com/comics/series/42303/ultimate_wolverine_2025_present) by Christopher Condon **(Ongoing)**.
 
@@ -55,7 +55,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 24. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
 
-25. [Children of the Vault](https://www.marvel.com/comics/series/36896/children_of_the_vault_2023_present) by Deniz Kamp.
+25. [Children of the Vault](https://www.marvel.com/comics/series/36896/children_of_the_vault_2023_present) by Deniz Camp.
 
 26. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
 
