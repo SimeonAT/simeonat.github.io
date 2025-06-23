@@ -39,22 +39,26 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 16. [Fall of the House of X](https://www.marvel.com/comics/series/38458/fall_of_the_house_of_x_2024_present) by Gerry Duggan and [Rise of the Powers of X](https://www.marvel.com/comics/series/38472/rise_of_the_powers_of_x_2024_present) by Kieron Gillen.
 
-17. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
+17. [Ultimate X-Men](https://www.marvel.com/comics/series/38817/ultimate_xmen_2024_present) by Peach Momoko **(Ongoing)**.
 
-18. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
+18. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
 
-19. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
+19. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
 
-20. [Ultimate X-Men](https://www.marvel.com/comics/series/38817/ultimate_xmen_2024_present) by Peach Momoko **(Ongoing)**.
+20. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison run).
 
-21. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
+21. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
 
-22. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
+22. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
 
-23. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
+23. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
 
-24. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett and Andy Lanning.
+24. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
 
-25. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+25. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett and Andy Lanning.
 
-26. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
+26. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+
+27. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
+
+28. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
