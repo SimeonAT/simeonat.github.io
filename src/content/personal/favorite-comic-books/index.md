@@ -33,7 +33,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 13.  [Absolute Batman](https://www.dc.com/comics/absolute-batman-2024/absolute-batman-1) by Scott Snyder and Nick Dragotta **(Ongoing)**.
 
-14. X-Men by Jonathan Hickman: [House of X](https://www.marvel.com/comics/series/26338/house_of_x_2019), [Powers of X](https://www.marvel.com/comics/series/26340/powers_of_x_2019), [Inferno](https://www.marvel.com/comics/series/32954/inferno_2021_2022), and [X-Men](https://www.marvel.com/comics/series/27567/xmen_2019_2021)
+14. X-Men by Jonathan Hickman: [House of X](https://www.marvel.com/comics/series/26338/house_of_x_2019), [Powers of X](https://www.marvel.com/comics/series/26340/powers_of_x_2019), [Inferno](https://www.marvel.com/comics/series/32954/inferno_2021_2022), and [X-Men](https://www.marvel.com/comics/series/27567/xmen_2019_2021).
 
 15. [X-Men](https://www.marvel.com/comics/series/31324/xmen_2021_present) by Gerry Duggan.
 
