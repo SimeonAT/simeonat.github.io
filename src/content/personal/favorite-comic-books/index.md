@@ -31,16 +31,18 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 12.  [Fantastic Four](https://www.marvel.com/comics/series/421/fantastic_four_1998_2012) and [FF](https://www.marvel.com/comics/series/13440/ff_2011_2012) by Jonathan Hickman.
 
-13. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
+13. X-Men by Jonathan Hickman: [House of X](https://www.marvel.com/comics/series/26338/house_of_x_2019), [Powers of X](https://www.marvel.com/comics/series/26340/powers_of_x_2019), [Inferno](https://www.marvel.com/comics/series/32954/inferno_2021_2022), and [X-Men](https://www.marvel.com/comics/series/27567/xmen_2019_2021)
 
-14. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
+14. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
 
-15. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
+15. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
 
-16. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
+16. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
 
-17. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
+17. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
 
-18. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+18. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
 
-19. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
+19. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+
+20. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
