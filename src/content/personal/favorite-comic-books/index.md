@@ -62,3 +62,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 27. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
 
 28. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
+
+29. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+
+30. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
