@@ -43,32 +43,34 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 18. [Ultimate X-Men](https://www.marvel.com/comics/series/38817/ultimate_xmen_2024_present) by Peach Momoko **(Ongoing)**.
 
-19. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
+19. [Hawkeye](https://www.marvel.com/comics/series/16309/hawkeye_2012_2015) by Matt Fraction.
 
-20. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
+20. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
 
-21. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison Batman run).
+21. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
 
-22. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
+22. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison Batman run).
 
-23. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
+23. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
 
-24. [Children of the Vault](https://www.marvel.com/comics/series/36896/children_of_the_vault_2023_present) by Deniz Kamp.
+24. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
 
-25. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
+25. [Children of the Vault](https://www.marvel.com/comics/series/36896/children_of_the_vault_2023_present) by Deniz Kamp.
 
-26. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
+26. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
 
-27. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett.
+27. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
 
-28. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+28. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett.
 
-29. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns. 
+29. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
 
-30. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
+30. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns. 
 
-31. [Batman Vol. 1: Failsafe](https://www.dc.com/graphic-novels/batman-2016/batman-vol-1-failsafe) by Chip Zdarsky.
+31. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
 
-32. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+32. [Batman Vol. 1: Failsafe](https://www.dc.com/graphic-novels/batman-2016/batman-vol-1-failsafe) by Chip Zdarsky.
 
-33. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
+33. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+
+34. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
