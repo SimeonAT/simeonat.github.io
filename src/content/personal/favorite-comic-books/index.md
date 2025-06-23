@@ -33,4 +33,14 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 13. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
 
-14.  [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
+14. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
+
+15. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
+
+16. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
+
+17. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
+
+18. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+
+19. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
