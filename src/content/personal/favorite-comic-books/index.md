@@ -9,7 +9,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 1. Avengers by Jonathan Hickman: [New Avengers](https://www.marvel.com/comics/series/16451/new_avengers_2013_2015), [Avengers](https://www.marvel.com/comics/series/16452/avengers_2012_-_2015), [Infinity](https://www.marvel.com/comics/series/17735/infinity_2013) and [Secret Wars](https://www.marvel.com/comics/series/19648/secret_wars_2015_2016).
 
-2. [Batman](https://www.dcuniverseinfinite.com/comics/series/batman-2011-2016/e98b04b0-b3b3-4fda-b735-3c120c7c4f4a) by Scott Synder and Greg Capullo.
+2. [Batman](https://www.dcuniverseinfinite.com/comics/series/batman-2011-2016/e98b04b0-b3b3-4fda-b735-3c120c7c4f4a) by Scott Synder.
 
 3. [Ultimates](https://www.marvel.com/comics/series/38865/ultimates_2024_present) by Deniz Camp **(Ongoing)**.
 
@@ -25,13 +25,13 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 9. [Imperial](https://www.marvel.com/comics/series/42471/imperial_2025_present) by Jonathan Hickman.
   
-10. [East of West](https://imagecomics.com/comics/series/east-of-west) by Jonathan Hickman and Nick Dragotta.
+10. [East of West](https://imagecomics.com/comics/series/east-of-west) by Jonathan Hickman.
 
 11. [Wonder Woman: Dead Earth](https://www.dc.com/graphic-novels/wonder-woman-dead-earth-2019/wonder-woman-dead-earth) by Daniel Warren Johnson.
 
 12.  [Fantastic Four](https://www.marvel.com/comics/series/421/fantastic_four_1998_2012) and [FF](https://www.marvel.com/comics/series/13440/ff_2011_2012) by Jonathan Hickman.
 
-13.  [Absolute Batman](https://www.dc.com/comics/absolute-batman-2024/absolute-batman-1) by Scott Snyder and Nick Dragotta **(Ongoing)**.
+13.  [Absolute Batman](https://www.dc.com/comics/absolute-batman-2024/absolute-batman-1) by Scott Snyder **(Ongoing)**.
 
 14. X-Men by Jonathan Hickman: [House of X](https://www.marvel.com/comics/series/26338/house_of_x_2019), [Powers of X](https://www.marvel.com/comics/series/26340/powers_of_x_2019), [Inferno](https://www.marvel.com/comics/series/32954/inferno_2021_2022), and [X-Men](https://www.marvel.com/comics/series/27567/xmen_2019_2021).
 
@@ -59,11 +59,11 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 26. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
 
-27. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett and Andy Lanning.
+27. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett.
 
 28. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
 
-29. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns and Gary Frank. 
+29. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns. 
 
 30. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
 
