@@ -6,6 +6,10 @@ interface Props {
 const { date } = Astro.props;
 ---
 
+<!-- Make sure to put dates in `MM-DD-YYYY`` format to ensure the displayed
+     date is one shown as one day off on the website.
+     https://stackoverflow.com/a/31732581/6621292
+-->
 <time datetime={date.toISOString()}>
   {
     date.toLocaleDateString("en-US", {

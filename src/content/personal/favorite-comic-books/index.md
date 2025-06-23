@@ -1,7 +1,7 @@
 ---
 title: 'Favorite Comic Books'
 description: "A list of all of my favorite comic book series."
-date: 2025-06-22
+date: 06-22-2025
 draft: false
 ---
 
