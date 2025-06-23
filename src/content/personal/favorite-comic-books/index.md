@@ -67,6 +67,8 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 30. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
 
-31. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+31. [Batman Vol. 1: Failsafe](https://www.dc.com/graphic-novels/batman-2016/batman-vol-1-failsafe) by Chip Zdarsky.
 
-32. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
+32. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+
+33. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
