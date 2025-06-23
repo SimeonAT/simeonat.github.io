@@ -13,4 +13,6 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 3. [The Omega Men](https://www.dcuniverseinfinite.com/comics/series/the-omega-men-2015-2016/60b3893d-c9df-47f5-b1ae-ffbca548bf29) by Tom King.
 
+4. [Fantastic Four](https://www.marvel.com/comics/series/421/fantastic_four_1998_2012) and [FF](https://www.marvel.com/comics/series/13440/ff_2011_2012) by Jonathan Hickman.
 
+5. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
