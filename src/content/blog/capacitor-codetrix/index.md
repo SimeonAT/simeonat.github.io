@@ -1,7 +1,7 @@
 ---
 title: 'Unit Tests for the Ionic Capacitor Codetrix Plugin'
 description: "Writing Unit Tests for the Capacitor Codetrix Plugin that Implements Google OAuth"
-date: 2023-06-18
+date: 06-18-2023
 draft: false
 ---
 

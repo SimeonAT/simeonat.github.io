@@ -1,7 +1,7 @@
 ---
 title: 'Backing up my Gitea Server'
 description: "How I used Python to Back up the Repos on my Self-Hosted Gitea Server"
-date: 2023-07-15
+date: 07-15-2023
 draft: false
 ---
 

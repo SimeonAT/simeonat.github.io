@@ -1,7 +1,7 @@
 ---
 title: 'Implementing Authentication in Deno using GraphQL'
 description: "How I implemented authentication for a simple Deno GraphQL backend server"
-date: 2023-08-19
+date: 08-19-2023
 draft: false
 ---
 

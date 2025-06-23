@@ -1,7 +1,7 @@
 ---
 title: 'Using Python to Automatically Update my Docker Containers'
 description: "The Python scripts I wrote to automate the process of updating my Docker containers"
-date: 2023-09-21
+date: 09-21-2023
 draft: false
 ---
 
