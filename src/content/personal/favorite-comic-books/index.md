@@ -45,7 +45,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 19. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
 
-20. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison run).
+20. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison Batman run).
 
 21. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
 
