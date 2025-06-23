@@ -24,9 +24,13 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 8. [Ultimate Wolverine](https://www.marvel.com/comics/series/42303/ultimate_wolverine_2025_present) by Christopher Condon **(Ongoing)**.
 
 9. [Imperial](https://www.marvel.com/comics/series/42471/imperial_2025_present) by Jonathan Hickman.
-
-10.  [Fantastic Four](https://www.marvel.com/comics/series/421/fantastic_four_1998_2012) and [FF](https://www.marvel.com/comics/series/13440/ff_2011_2012) by Jonathan Hickman.
   
-11. [East of West](https://imagecomics.com/comics/series/east-of-west) by Jonathan Hickman and Nick Dragotta.
+10. [East of West](https://imagecomics.com/comics/series/east-of-west) by Jonathan Hickman and Nick Dragotta.
 
-12.  [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
+11. [Wonder Woman: Dead Earth](https://www.dc.com/graphic-novels/wonder-woman-dead-earth-2019/wonder-woman-dead-earth) by Daniel Warren Johnson.
+
+12.  [Fantastic Four](https://www.marvel.com/comics/series/421/fantastic_four_1998_2012) and [FF](https://www.marvel.com/comics/series/13440/ff_2011_2012) by Jonathan Hickman.
+
+13. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
+
+14.  [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
