@@ -29,7 +29,7 @@ This is a regularly updated list of the books I that I found offer realy useful 
 
 11. [The Perfection Trap](https://www.amazon.com/Perfection-Trap-Embracing-Power-Enough/dp/1982149531) by Thomas Curran.
 
-12. [Atomic Habits](https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299) by James Clear
+12. [Atomic Habits](https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299) by James Clear.
 
 13. [Principles](https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021) by Ray Dalio.
 
