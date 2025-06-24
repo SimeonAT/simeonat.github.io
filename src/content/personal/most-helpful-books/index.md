@@ -1,7 +1,7 @@
 ---
 title: 'Most Helpful Books'
 description: "The most helpful books that I have ever read."
-date: 06-22-2025
+date: 06-24-2025
 draft: false
 ---
 
@@ -29,12 +29,14 @@ This is a regularly updated list of the books I that I found offer realy useful 
 
 11. [The Perfection Trap](https://www.amazon.com/Perfection-Trap-Embracing-Power-Enough/dp/1982149531) by Thomas Curran.
 
-12. [Principles](https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021) by Ray Dalio.
+12. [Atomic Habits](https://www.amazon.com/Atomic-Habits-Proven-Build-Break/dp/0735211299) by James Clear
 
-13. [Rich Dad, Poor Dad](https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194) by Robert Kiyosaki.
+13. [Principles](https://www.amazon.com/Principles-Life-Work-Ray-Dalio/dp/1501124021) by Ray Dalio.
 
-14. [Deep Work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692) by Cal Newport (haven't finished the book yet, but still found what I read useful).
+14. [Rich Dad, Poor Dad](https://www.amazon.com/Rich-Dad-Poor-Teach-Middle/dp/1612680194) by Robert Kiyosaki.
 
-15. [How to be a Straight-A Student](https://www.amazon.com/How-Become-Straight-Student-Unconventional/dp/0767922719) by Cal Newport (haven't finished the book, but still found what I read useful).
+15. [Deep Work](https://www.amazon.com/Deep-Work-Focused-Success-Distracted/dp/1455586692) by Cal Newport (haven't finished the book yet, but still found what I read useful).
 
-16. [How to Not Die Alone](https://www.amazon.com/How-Not-Die-Alone-Surprising/dp/1982120622) by Logan Ury (haven't finished the book yet, but still found what I read useful).
+16. [How to be a Straight-A Student](https://www.amazon.com/How-Become-Straight-Student-Unconventional/dp/0767922719) by Cal Newport (haven't finished the book, but still found what I read useful).
+
+17. [How to Not Die Alone](https://www.amazon.com/How-Not-Die-Alone-Surprising/dp/1982120622) by Logan Ury (haven't finished the book yet, but still found what I read useful).
