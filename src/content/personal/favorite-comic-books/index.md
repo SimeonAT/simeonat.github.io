@@ -1,7 +1,7 @@
 ---
 title: 'Favorite Comic Books'
 description: "My favorite comic book series of all time."
-date: 06-22-2025
+date: 06-24-2025
 draft: false
 ---
 
@@ -27,50 +27,52 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
   
 10. [East of West](https://imagecomics.com/comics/series/east-of-west) by Jonathan Hickman.
 
-11. [Wonder Woman: Dead Earth](https://www.dc.com/graphic-novels/wonder-woman-dead-earth-2019/wonder-woman-dead-earth) by Daniel Warren Johnson.
+11.  [Fantastic Four](https://www.marvel.com/comics/series/421/fantastic_four_1998_2012) and [FF](https://www.marvel.com/comics/series/13440/ff_2011_2012) by Jonathan Hickman.
 
-12.  [Fantastic Four](https://www.marvel.com/comics/series/421/fantastic_four_1998_2012) and [FF](https://www.marvel.com/comics/series/13440/ff_2011_2012) by Jonathan Hickman.
+12.  [Wonder Woman: Dead Earth](https://www.dc.com/graphic-novels/wonder-woman-dead-earth-2019/wonder-woman-dead-earth) by Daniel Warren Johnson.
 
 13.  [Absolute Batman](https://www.dc.com/comics/absolute-batman-2024/absolute-batman-1) by Scott Snyder **(Ongoing)**.
 
-14. X-Men by Jonathan Hickman: [House of X](https://www.marvel.com/comics/series/26338/house_of_x_2019), [Powers of X](https://www.marvel.com/comics/series/26340/powers_of_x_2019), [Inferno](https://www.marvel.com/comics/series/32954/inferno_2021_2022), and [X-Men](https://www.marvel.com/comics/series/27567/xmen_2019_2021).
+14.  [Supergirl: Woman of Tomorrow](https://www.dcuniverseinfinite.com/comics/series/supergirl-woman-of-tomorrow-2021/0e8f2a1d-a627-4286-a3c7-f88c7e458a63) by Tom King.
 
-15. [X-Men](https://www.marvel.com/comics/series/31324/xmen_2021_present) by Gerry Duggan.
+15. X-Men by Jonathan Hickman: [House of X](https://www.marvel.com/comics/series/26338/house_of_x_2019), [Powers of X](https://www.marvel.com/comics/series/26340/powers_of_x_2019), [Inferno](https://www.marvel.com/comics/series/32954/inferno_2021_2022), and [X-Men](https://www.marvel.com/comics/series/27567/xmen_2019_2021).
 
-16. [Fall of the House of X](https://www.marvel.com/comics/series/38458/fall_of_the_house_of_x_2024_present) by Gerry Duggan and [Rise of the Powers of X](https://www.marvel.com/comics/series/38472/rise_of_the_powers_of_x_2024_present) by Kieron Gillen.
+16. [X-Men](https://www.marvel.com/comics/series/31324/xmen_2021_present) by Gerry Duggan.
 
-17. [Invincible Iron Man](https://www.marvel.com/comics/series/34717/invincible_iron_man_2022_present) by Gerry Duggan.
+17. [Fall of the House of X](https://www.marvel.com/comics/series/38458/fall_of_the_house_of_x_2024_present) by Gerry Duggan and [Rise of the Powers of X](https://www.marvel.com/comics/series/38472/rise_of_the_powers_of_x_2024_present) by Kieron Gillen.
 
-18. [Ultimate X-Men](https://www.marvel.com/comics/series/38817/ultimate_xmen_2024_present) by Peach Momoko **(Ongoing)**.
+18. [Invincible Iron Man](https://www.marvel.com/comics/series/34717/invincible_iron_man_2022_present) by Gerry Duggan.
 
-19. [Hawkeye](https://www.marvel.com/comics/series/16309/hawkeye_2012_2015) by Matt Fraction.
+19. [Ultimate X-Men](https://www.marvel.com/comics/series/38817/ultimate_xmen_2024_present) by Peach Momoko **(Ongoing)**.
 
-20. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
+20. [Hawkeye](https://www.marvel.com/comics/series/16309/hawkeye_2012_2015) by Matt Fraction.
 
-21. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
+21. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
 
-22. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison Batman run).
+22. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
 
-23. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
+23. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison Batman run).
 
-24. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
+24. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
 
-25. [Children of the Vault](https://www.marvel.com/comics/series/36896/children_of_the_vault_2023_present) by Deniz Camp.
+25. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
 
-26. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
+26. [Children of the Vault](https://www.marvel.com/comics/series/36896/children_of_the_vault_2023_present) by Deniz Camp.
 
-27. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
+27. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
 
-28. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett.
+28. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
 
-29. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+29. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett.
 
-30. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns. 
+30. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
 
-31. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
+31. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns. 
 
-32. [Batman Vol. 1: Failsafe](https://www.dc.com/graphic-novels/batman-2016/batman-vol-1-failsafe) by Chip Zdarsky.
+32. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
 
-33. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+33. [Batman Vol. 1: Failsafe](https://www.dc.com/graphic-novels/batman-2016/batman-vol-1-failsafe) by Chip Zdarsky.
 
-34. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
+34. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+
+35. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
