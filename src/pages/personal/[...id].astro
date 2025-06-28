@@ -3,6 +3,7 @@ import { type CollectionEntry, getCollection, render } from "astro:content";
 import Layout from "@layouts/Layout.astro";
 import Container from "@components/Container.astro";
 import FormattedDate from "@components/FormattedDate.astro";
+import LastUpdatedDate from "@components/LastUpdatedDate.astro";
 import { readingTime } from "@lib/utils";
 import BackToPrevious from "@components/BackToPrevious.astro";
 import PostNavigation from "@components/PostNavigation.astro";
@@ -66,7 +67,11 @@ const { Content, headings } = await render(post);
           <div class="font-base text-sm">
             {readingTime(post.body)}
           </div>
-        )}        
+        )}
+      &bull;
+      <div>
+        <LastUpdatedDate date={post.data.lastUpdated} />
+      </div>      
       </div>
       <h1 class="animate text-3xl font-semibold text-black dark:text-white">
         {post.data.title}
