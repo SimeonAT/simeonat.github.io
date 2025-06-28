@@ -2,10 +2,9 @@
 title: 'Favorite Comic Books'
 description: "My favorite comic book series of all time."
 date: 06-22-2025
+lastUpdated: 06-24-2025
 draft: false
 ---
-
-*Last Updated: June 24, 2025.*
 
 This is a regularly updated list of my favorite comic books of all time. Whenever I find read a new comic book series that I enjoy, I add those comics to this list. Comic book series that are still ongoing are labelled as such.
 

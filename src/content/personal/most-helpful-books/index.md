@@ -2,10 +2,9 @@
 title: 'Most Helpful Books'
 description: "The most helpful books that I have ever read."
 date: 06-22-2025
+lastUpdated: 06-24-2025
 draft: false
 ---
-
-*Last Updated: June 24, 2025.*
 
 This is a regularly updated list of the books I that I found offer realy useful life advice and wisdom, along with teaching me something new. Whenever I find a book that I found helpful and inspiring, I add it to this list.
 
