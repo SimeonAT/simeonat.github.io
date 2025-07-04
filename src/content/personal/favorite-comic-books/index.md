@@ -26,7 +26,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 9. [Transformers](https://imagecomics.com/comics/series/transformers) by Daniel Warren Johnson **(Ongoing)**.
 
-10. [Imperial](https://www.marvel.com/comics/series/42471/imperial_2025_present) by Jonathan Hickman.
+10. [Imperial](https://www.marvel.com/comics/series/42471/imperial_2025_present) by Jonathan Hickman **(Ongoing)**.
   
 11. [East of West](https://imagecomics.com/comics/series/east-of-west) by Jonathan Hickman.
 
