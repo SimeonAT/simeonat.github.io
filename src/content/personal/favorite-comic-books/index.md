@@ -2,7 +2,7 @@
 title: 'Favorite Comic Books'
 description: "My favorite comic book series of all time."
 date: 06-22-2025
-lastUpdated: 06-30-2025
+lastUpdated: 07-19-2025
 draft: false
 ---
 
