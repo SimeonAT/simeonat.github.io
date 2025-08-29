@@ -24,9 +24,9 @@ This is a regularly updated list of the books I that I found offer realy useful 
 
 8. [Unwinding Anxiety](https://www.amazon.com/Unwinding-Anxiety-Science-Shows-Cycles/dp/0593330447) by Judson Brewer.
 
-9.  [Hidden Potential](https://www.amazon.com/Think-Again-Power-Knowing-What/dp/1984878107) by Adam Grant.
+9.  [Hidden Potential](https://www.amazon.com/Hidden-Potential-Science-Achieving-Greater/dp/0593653149) by Adam Grant.
 
-10. [Think Again](https://www.amazon.com/dp/1984878123) by Adam Grant.  
+10. [Think Again](https://www.amazon.com/Think-Again-Power-Knowing-What/dp/1984878107) by Adam Grant.  
 
 11. [The Perfection Trap](https://www.amazon.com/Perfection-Trap-Embracing-Power-Enough/dp/1982149531) by Thomas Curran.
 
