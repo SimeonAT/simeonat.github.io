@@ -24,7 +24,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 8. [Decorum](https://imagecomics.com/comics/series/decorum) by Jonathan Hickman.
 
-9. [Ghost Cage](https://imagecomics.com/comics/series/ghost-cage) by Nick Dragotta.
+9. [Ghost Cage](https://imagecomics.com/comics/series/ghost-cage) by Caleb Goellner and Nick Dragotta.
 
 10. [Extremity](https://imagecomics.com/comics/series/extremity) by Daniel Warren Johnson.
 
