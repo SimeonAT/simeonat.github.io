@@ -9,7 +9,7 @@ import Link from "@components/Link.astro";
 import TableOfContents from "@components/TableOfContents.astro";
 
 export async function getStaticPaths() {
-  const projects = (await getCollection("projects"))
+  const projects = (await getCollection("research"))
     .filter((post) => !post.data.draft)
     .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
   return projects.map((project) => ({

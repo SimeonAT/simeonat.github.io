@@ -29,10 +29,10 @@ export const PERSONAL: Metadata = {
     "Where I discuss my hobbies and other non-technical topics.",
 };
 
-export const PROJECTS: Metadata = {
-  TITLE: "Projects",
+export const RESEARCH: Metadata = {
+  TITLE: "Research",
   DESCRIPTION:
-    "Projects that I am proud of.",
+    "Research projects I have worked on.",
 };
 
 export const SOCIALS: Socials = [
