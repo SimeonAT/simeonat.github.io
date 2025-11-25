@@ -23,8 +23,8 @@ const blog = (await getCollection("blog"))
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
   .slice(0, SITE.NUM_POSTS_ON_HOMEPAGE);
 
-const projects: CollectionEntry<"projects">[] = (
-  await getCollection("projects")
+const projects: CollectionEntry<"research">[] = (
+  await getCollection("research")
 )
   .filter((project) => !project.data.draft)
   .sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf())
@@ -93,12 +93,12 @@ const projects: CollectionEntry<"projects">[] = (
         </ul>
       </section>
 
-      <!-- <section class="animate space-y-6">
+      <section class="animate space-y-6">
         <div class="flex flex-wrap items-center justify-between gap-y-2">
           <h2 class="font-semibold text-black dark:text-white">
-            Recent projects
+            Research Projects
           </h2>
-          <Link href="/projects"> See all projects </Link>
+          <Link href="/research"> See all projects </Link>
         </div>
         <ul class="not-prose flex flex-col gap-4">
           {
@@ -109,7 +109,7 @@ const projects: CollectionEntry<"projects">[] = (
             ))
           }
         </ul>
-      </section> -->
+      </section>
     </div>
   </Container>
 </Layout>

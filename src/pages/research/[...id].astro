@@ -43,25 +43,25 @@ const { Content, headings } = await render(project);
       <h1 class="text-3xl font-semibold text-black dark:text-white">
         {project.data.title}
       </h1>
-      {
-        (project.data.demoURL || project.data.repoURL) && (
+      <div class="mt-3">
+        {(project.data.demoURL || project.data.repoURL) && (
           <nav class="flex gap-1">
             {project.data.demoURL && (
-              <Link href={project.data.demoURL} external>
-                demo
+              <Link href={project.data.demoURL}>
+                {project.data.thesis ? "Thesis" : "Paper" }
               </Link>
             )}
-            {project.data.demoURL && project.data.repoURL && <span>/</span>}
+            {project.data.demoURL && project.data.repoURL && <span class="text-2xl">/</span>}
             {project.data.repoURL && (
               <Link href={project.data.repoURL} external>
-                repo
+                Source Code
               </Link>
             )}
           </nav>
-        )
-      }
+        )}
+        </div>
     </div>
-    <TableOfContents headings={headings} />
+    <!-- <TableOfContents headings={headings} /> -->
     <article class="animate">
       <Content />
     </article>

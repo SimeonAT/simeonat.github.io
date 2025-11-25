@@ -21,6 +21,7 @@ const research = defineCollection({
     draft: z.boolean().optional(),
     demoURL: z.string().optional(),
     repoURL: z.string().optional(),
+    thesis: z.boolean().optional()
   }),
 });
 
