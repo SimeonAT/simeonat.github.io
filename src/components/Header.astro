@@ -17,7 +17,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
           {SITE.TITLE}
         </div>
       </Link>
-      <nav class="flex items-center gap-1 text-xl">
+      <nav class="flex flex-wrap items-center gap-1 text-xl">
         <!--
           All you need to display of PDF is to put the PDF in the "/public" directory:
           https://answers.netlify.com/t/cant-load-pdf-on-static-astro-site/111152/2   
@@ -35,7 +35,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
           {`/`}
         </span>
         <Link href="/personal">Personal</Link>
-        <button
+        <!-- <button
           id="magnifying-glass"
           aria-label="Search"
           class="flex items-center rounded border border-black/15 bg-neutral-100 px-2 py-1 text-xl transition-colors duration-300 ease-in-out hover:bg-black/5 hover:text-black focus-visible:bg-black/5 focus-visible:text-black dark:border-white/20 dark:bg-neutral-900 dark:hover:bg-white/5 dark:hover:text-white dark:focus-visible:bg-white/5 dark:focus-visible:text-white mr-3 ml-3"
@@ -44,7 +44,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </div>
           Search
-        </button>
+        </button> -->
       </nav>
     </div>
   </Container>
