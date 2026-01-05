@@ -1,5 +1,5 @@
 ---
-title: "Comparative Study of Encryption Algorithms in Battery Powered Thread Networks"
+title: "Comparative Study of Encryption Algorithms in Battery Powered Thread Networks for Smart Homes"
 description: "Master's Thesis"
 date: "12/12/2025"
 demoURL: "/files/Masters-Thesis.pdf"
