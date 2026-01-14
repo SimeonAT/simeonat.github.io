@@ -20,3 +20,18 @@ In this post, I'm going to focus on the ***engineering*** part of my thesis: how
 </Callout>
 
 ## Overview
+
+For my thesis, I had to modify OpenThread so it is capable of using the ASCON AEAD algorithms on 802.15.4 compatible[^1]  ESP32 devices. 
+
+However, I couldn't just fork and edit the [official OpenThread GitHub repository](https://github.com/openthread/openthread), since the codebase is designed to be hardware-agnostic. As a result, modifications had to be made in the source code of [ESP-IDF](https://github.com/espressif/esp-idf), the open source development framework that is managed by Espressif, the hardware manufacturer of ESP32s. ESP-IDF includes [Espressif's fork of OpenThread](https://github.com/espressif/openthread) as a Git submodule, and provides this fork as a dependency that can be imported into an ESP-IDF project whenever developers wish to run OpenThread on their ESP32 devices. 
+
+Thus, I had to fork both the ESP-IDF codebase and Espressif's OpenThread fork (rather than the official OpenThread repository). My forks of [ESP-IDF](https://github.com/UCSC-ThreadAscon/esp-idf) and [Espressif's fork of OpenThread](https://github.com/UCSC-ThreadAscon/openthread) are publicly available on GitHub. Commits are always being made to ESP-IDF source code and the Espressif OpenThread fork on an often basis. I always update my forks to be up-to-date with the `main` or `master` branches of their respective upstream repositories whenever new changes are made.
+
+The forks of ESP-IDF and the Espressif OpenThread fork collectively make up my modified version of OpenThread that can run the LibAscon implementations of ASCON-128a and ASCON-128 on 802.15.4 compatible ESP32 microcontrollers. In addition, my modified OpenThread implementation enables users to specify  whether ASCON-128a or ASCON-128 should be used for encryption with the use of a compiler flag.
+
+Furthermore, the forks do not support the ability to use ASCON-80pq, as the creators of ASCON [encourage the use of ASCON-128 and ASCON-128a over ASCON-80pq](https://link.springer.com/article/10.1007/s00145-021-09398-9#Sec2). As a matter of fact, a [recommendation](https://csrc.nist.gov/csrc/media/Events/2023/lightweight-cryptography-workshop-2023/documents/accepted-papers/03-proposals-for-standardization-of-ascon-family.pdf) has additionally been made to remove ASCON-80pq from the official, standardized version of the ASCON cipher suite that will be developed by NIST. 
+
+## The nRF Packet Sniffer
+
+---
+[^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
