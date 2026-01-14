@@ -9,6 +9,8 @@ import Callout from "@/components/Callout.astro";
 
 ---
 
+## Introduction
+
 For my [Master's Thesis](https://simeonat.github.io/research/thesis/), I modified [OpenThread](https://openthread.io/), Google's open source implementation of the [Thread](https://www.threadgroup.org/) commercial IoT protocol, to support the symmetric encryption algorithms in the [NIST endorsed](https://csrc.nist.gov/news/2023/lightweight-cryptography-nist-selects-ascon) [ASCON](https://ascon.isec.tugraz.at/) cipher suite. 
 
 My thesis mainly focused on the ***science***, showing that when the cipher built into OpenThread: AES-CCM, is replaced with ASCON AEAD, there is *no significant adverse impact* in the network performance and energy consumption of Thread devices. 
@@ -31,7 +33,21 @@ The forks of ESP-IDF and the Espressif OpenThread fork collectively make up my m
 
 Furthermore, the forks do not support the ability to use ASCON-80pq, as the creators of ASCON [encourage the use of ASCON-128 and ASCON-128a over ASCON-80pq](https://link.springer.com/article/10.1007/s00145-021-09398-9#Sec2). As a matter of fact, a [recommendation](https://csrc.nist.gov/csrc/media/Events/2023/lightweight-cryptography-workshop-2023/documents/accepted-papers/03-proposals-for-standardization-of-ascon-family.pdf) has additionally been made to remove ASCON-80pq from the official, standardized version of the ASCON cipher suite that will be developed by NIST. 
 
-## The nRF Packet Sniffer
+### The nRF Packet Sniffer
+
+<figure>
+  <div style="display: flex; justify-content: space-around; ">
+    <img src="/images/thesis-blog-post/nrf-dongle.png" width="250"/> 
+    <img src="/images/thesis-blog-post/nrf52840-devkit.png" width="300"/> 
+  </div>
+  <figcaption>
+  The [nRF52840 dongle](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Product-Briefs/nRF52840-Dongle-product-brief.pdf) (left) and the [nRF52840 development kit](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Product-Briefs/nRF52840-DK-product-brief.pdf) (right).
+  </figcaption>
+</figure>
+
+A really useful tool that I used in the process of replacing AES-CCM with ASCON AEAD was the [nRF 802.15.4 packet sniffer software](https://www.nordicsemi.com/Products/Development-tools/nRF-Sniffer-for-802154) created by Nordic Semiconductors. The 802.15.4 packet sniffer is designed to be run on either the [nRF52840 development kit](https://www.nordicsemi.com/Products/Development-tools/nRF-Sniffer-for-802154) or the [nRF52840 dongle](https://www.nordicsemi.com/Products/Development-hardware/nRF52840-Dongle).
+
+The nRF52840 dongle was set up to run the nRF 802.15.4 packet sniffer such that it is able to listen to and display the packets sent between my ESP32 devices on [Wireshark](https://www.nordicsemi.com/Products/Development-hardware/nRF52840-Dongle). Since Thread is encrypted under AES-CCM, I had to give Wireshark the Thread network key used by my ESP32 devices in order for it to be able to properly decrypt and parse the contents of in-flight packets.
 
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
