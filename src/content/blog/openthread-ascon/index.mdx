@@ -70,9 +70,9 @@ Before ASCON-128a and ASCON-128 could be integrated into OpenThread, AES-CCM nee
 
 Thus, in this section, I will describe how I removed the use of AES-CCM in OpenThread in these particular aspects of the protocol. However, I must note that AES-CCM was not removed in its entirety within the forks; the [headers](https://github.com/UCSC-ThreadAscon/openthread/blob/main/src/core/crypto/aes_ccm.hpp) and [source](https://github.com/UCSC-ThreadAscon/openthread/blob/main/src/core/crypto/aes_ccm.cpp) files which define the AES-CCM API in OpenThread still remain. 
 
-Instead, I removed the specific function calls which invoke AES-CCM were removed, there definitions of functions which implement AES-CCM were modified so that no encryption or decryption would be done.
+Instead, I removed the specific function calls which invoked AES-CCM. They were modified such that that no encryption or decryption would be done.
 
-### Removing AES-CCM MAC Layer Encryption
+### AES MAC Layer Encryption
 
 Based on the source code in both ESP-IDF and Espressif's OpenThread fork, the process of encryption happens immediately before a MAC frame is transmitted. Given the Thread network key and a nonce, AES-CCM is used to create a ciphertext that is of the exact same length as the plaintext, along with a 32 bit Message Integrity Counter (MIC) that is appended at the end of the frame.
 
@@ -85,7 +85,7 @@ The [Thread specification](https://www.threadgroup.org/ThreadSpec) states that t
   </figcaption>
 </figure>
 
-Both software and hardware encryption are used by ESP32 devices when doing AES-CCM MAC layer encryption in OpenThread. AES-CCM encryption is done in *software* when encrypting MAC frames that are sent during commissioning. On the other hand, *hardware* encryption is used instead to
+Both software and hardware encryption are used by ESP32 devices when doing AES-CCM MAC layer encryption in OpenThread. AES-CCM encryption is done in *software* when encrypting MAC frames that are sent during [commissioning](https://www.threadgroup.org/Portals/0/documents/support/CommissioningWhitePaper_658_2.pdf). On the other hand, *hardware* encryption is used instead to
 protect MAC frames that are transmitted once a device is part of a Thread network. In other words, hardware encryption is used on all MAC frames sent which carry application layer[^2].
 
 The implementation of AES-CCM software encryption is contained in the method `TxFrame::ProcessTransmitAesCcm()`, whose definition can be found in the `src/mac/mac_frame.cpp` source file of the Espressif OpenThread fork. The `Mac::ProcessTransmitSecurity()` method in `src/mac/mac.cpp` invokes `ProcessTransmitAesCcm()` to do software encryption for MAC frames transmitted during commissioning. On the other hand, the hardware encryption used on frames carrying application layer data is invoked using the [ESP32 802.15.4 API](https://github.com/espressif/esp-idf/tree/master/components/ieee802154) function `esp_ieee802154_set_transmit_security()`
@@ -102,7 +102,36 @@ VerifyOrExit(ShouldHandleTransmitSecurity());
 
 If the inner function `ShouldHandleTransmitSecurity()` returns `false`, `ProcessTransmitSecurity()` will immediately return. On the other hand, when `true` is returned, `ProcessTransmitSecurity()` will continue on, using `ProcessTransmitAesCcm()` to encrypt the payload contained in the MAC frame that is to be transmitted. In the case of the Espressif OpenThread fork, `ShouldHandleTransmitSecurity()` always returns `false`. Hence, the task of encrypting MAC frames which carry application layer data is always outsourced to the hardware. 
 
-Additionally, the implementation of `ProcessTransmitSecurity()`  defined in the `Mac` class is responsible for encrypting MAC frames that are involved in the process of commissioning. The `Mac` implementation of `ProcessTransmitSecurity()` does not contain the `ShouldHandleTransmitSecurity()` function call.  As a result, and as shown in Figure, software encryption (and *not* hardware encryption) will always be used on MAC frames that are transmitted during commissioning.
+Additionally, the implementation of `ProcessTransmitSecurity()`  defined in the `Mac` class is responsible for encrypting MAC frames that are involved in the process of commissioning. The `Mac` implementation of `ProcessTransmitSecurity()` does not contain the `ShouldHandleTransmitSecurity()` function call.  As a result, and as shown in the figure below, software encryption (and *not* hardware encryption) will always be used on MAC frames that are transmitted during commissioning.
+
+<figure>
+  <img src="/images/thesis-blog-post/hardware-encrypt-print-statement.png" />
+  <figcaption>
+  I added a temporary print statement immediately before hardware encryption is invoked. The fact that these print statements are displayed right after I entered the OpenThread CLI command to send a UDP packet on a [Full Thread Device (FTD)](https://openthread.io/guides/thread-primer/node-roles-and-types) indicates that hardware encryption is used on MAC frames that application layer data.
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/images/thesis-blog-post/software-encryption-commissioner.png" />
+  <figcaption>
+  I added a temporary print statement immediately before the call to `ProcessTransmitAesCcm()` in the version of `Mac::ProcessTransmitSecurity()` that defined in the `Mac` class. Such print statements are displayed a FTD acting as a commissioner -- hence showing that *software encryption* occurs during commissioning.
+  </figcaption>
+</figure>
+
+### AES MAC Layer Decryption
+
+The AES decryption process involves using the Thread network key and nonce to both decrypt the ciphertext and ensure the validity of the ciphertext against the MIC. Similar to MAC layer encryption, the nonce is made up of data from the frame header -- particularly, the 802.15.4 Extended Address, the frame counter, and security level of the MAC frame. The nonce is assembled to follow the nonce format specified in 802.15.4-2006.
+
+The ciphertext is decrypted first. After doing so, the decryption algorithm will attempt to recreate the MIC corresponding to the ciphertext and compare it to the MIC given in the packet. If both MICs match, the plaintext is sent for further processing. Otherwise, the frame gets dropped.
+
+Unlike AES MAC layer encryption, AES MAC decryption is only done in *software*. A single method: `Frame::ProcessReceiveAesCcm()`, is used to decrypt MAC frames. Any caller that wishes to do AES-CCM decryption at the MAC layer must use this method.
+
+### Removing AES-CCM MAC Layer Encryption & Decryption
+
+I took a two-step approach in order to remove the use of AES at the MAC layer. First, I removed the functionality for doing MAC encryption. To confirm that I have successfully removed encryption, I made sure that I could see the application layer payloads of packets sent by my ESP32s in plaintext in Wireshark. Only after that I have confirmed that I have successfully removed encryption, I began working on removing the functionality for decryption. When I have successfully removed the use of both AES encryption and decryption at the MAC layer, I was able to see the application layer payloads in plaintext, and the devices were able to receive such data without any issues.
+
+
+#### Removing MAC Layer Encryption
 
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
