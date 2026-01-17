@@ -133,6 +133,13 @@ I took a two-step approach in order to remove the use of AES at the MAC layer. F
 
 #### Removing MAC Layer Encryption
 
+To remove AES encryption on frames carrying application layer data, the line which invoked the hardware to do the encryption needed to be removed. This line was the function call:
+```cpp
+esp_ieee802154_set_transmit_security(&aFrame->mPsdu[-1],
+                                      s_security_key,
+                                      s_security_addr);
+```
+
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
 
