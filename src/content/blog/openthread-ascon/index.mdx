@@ -45,7 +45,7 @@ Furthermore, the forks do not support the ability to use ASCON-80pq, as the crea
     <img src="/images/thesis-blog-post/nrf52840-devkit.png" width="300"/> 
   </div>
   <figcaption>
-    The [nRF52840 dongle](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Product-Briefs/nRF52840-Dongle-product-brief.pdf) (left) and the [nRF52840 development kit](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Product-Briefs/nRF52840-DK-product-brief.pdf) (right).
+    Pictures of the [nRF52840 dongle](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Product-Briefs/nRF52840-Dongle-product-brief.pdf) (left) and the [nRF52840 development kit](https://www.nordicsemi.com/-/media/Software-and-other-downloads/Product-Briefs/nRF52840-DK-product-brief.pdf) (right) from their respective broduct briefs.
   </figcaption>
 </figure>
 
@@ -62,7 +62,17 @@ The nRF52840 dongle was set up to run the nRF 802.15.4 packet sniffer such that 
 
 ## Removing AES-CCM
 
-Before ASCON-128a and ASCON-128 could be integrated into OpenThread, AES-CCM needed to be removed. Once the ESP32 802.15.4 compatible devices were able to communicate successfully over plaintext, it was then possible to add ASCON AEAD on top of these plaintext communications.
+Before ASCON-128a and ASCON-128 could be integrated into OpenThread, AES-CCM needed to be removed. Once the ESP32 802.15.4 compatible devices were able to communicate successfully over plaintext, it was then possible to add ASCON AEAD on top of these plaintext communications. AES-CCM is used in the Thread protocol during:
+
+* The encryption and decryption of data packets (which carry application layer data) at the MAC layer.
+
+* The encryption and decryption of packets sent under the Mesh Link Establishment (MLE) protocol, which occurs over UDP at the transport layer.
+
+Thus, in this section, I will describe how I removed the use of AES-CCM in OpenThread in these particular aspects of the protocol. However, I must note that AES-CCM was not removed in its entirety within the forks; the [headers](https://github.com/UCSC-ThreadAscon/openthread/blob/main/src/core/crypto/aes_ccm.hpp) and [source](https://github.com/UCSC-ThreadAscon/openthread/blob/main/src/core/crypto/aes_ccm.cpp) files which define the AES-CCM API in OpenThread still remain. 
+
+Instead, I removed the specific function calls which invoke AES-CCM were removed, there definitions of functions which implement AES-CCM were modified so that no encryption or decryption would be done.
+
+
 
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
