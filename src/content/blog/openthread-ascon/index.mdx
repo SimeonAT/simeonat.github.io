@@ -78,12 +78,23 @@ Based on the source code in both ESP-IDF and Espressif's OpenThread fork, the pr
 
 The [Thread specification](https://www.threadgroup.org/ThreadSpec) states that the nonce to be used in all MAC frames must follow the format described in the 802.15.4-2006 specification. The [802.15.4-2006 specification](https://standards.ieee.org/ieee/802.15.4/3582/) specifies that an AES-CCM nonce is composed of the 802.15.4 Extended Address of the sender, the frame counter, and the security level of the frame. All three attributes can be found in the header of the MAC frame.
 
----
-[^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
-
 <figure>
   <img src="/images/thesis-blog-post/aesccm-nonce.png" width="500" />
   <figcaption>
     The format of a nonce as input to AES-CCM encryption, as described in [802.15.4-2006](https://standards.ieee.org/ieee/802.15.4/3582/).
   </figcaption>
 </figure>
+
+Both software and hardware encryption are used by ESP32 devices when doing AES-CCM MAC layer encryption in OpenThread. AES-CCM encryption is done in *software* when encrypting MAC frames that are sent during commissioning. On the other hand, *hardware* encryption is used instead to
+protect MAC frames that are transmitted once a device is part of a Thread network. In other words, hardware encryption is used on all MAC frames sent which carry application layer[^2].
+
+The implementation of AES-CCM software encryption is contained in the method `TxFrame::ProcessTransmitAesCcm()`, whose definition can be found in the `src/mac/mac_frame.cpp` source file of the Espressif OpenThread fork. The `Mac::ProcessTransmitSecurity()` method in `src/mac/mac.cpp` invokes `ProcessTransmitAesCcm()` to do software encryption for MAC frames transmitted during commissioning. On the other hand, the hardware encryption used on frames carrying application layer data is invoked using the ESP32 802.15.4 API function `esp_ieee802154_set_transmit_security()`
+called by `otPlatRadioTransmit()`, which in turn is defined in the OpenThread component directory of the ESP-IDF repository[^3].
+
+---
+[^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
+
+[^2]: This includes fragments of MLE packets which cannot fit in a single frame, as the Thread specification requires them to be encrypted using MAC layer encryption.
+
+[^3]: The function is specifically defined in `esp_openthread_radio.c` file, located in the
+`components/openthread/src/port` directory of ESP-IDF.
