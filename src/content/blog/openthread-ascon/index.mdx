@@ -74,7 +74,7 @@ Instead, I removed the specific function calls which invoke AES-CCM were removed
 
 ### Removing AES-CCM MAC Layer Encryption
 
-Based on the source code in both ESP-IDF and Espressif's OpenThread fork, the process of encryption happens immediately before a MAC frame is transmitted. Given the Thread network key and a nonce, AES-CCM is used to create a ciphertext that is of the exact same length as the plaintext, along with a $32$ bit Message Integrity Counter (MIC) that is appended at the end of the frame.
+Based on the source code in both ESP-IDF and Espressif's OpenThread fork, the process of encryption happens immediately before a MAC frame is transmitted. Given the Thread network key and a nonce, AES-CCM is used to create a ciphertext that is of the exact same length as the plaintext, along with a 32 bit Message Integrity Counter (MIC) that is appended at the end of the frame.
 
 The [Thread specification](https://www.threadgroup.org/ThreadSpec) states that the nonce to be used in all MAC frames must follow the format described in the 802.15.4-2006 specification. The [802.15.4-2006 specification](https://standards.ieee.org/ieee/802.15.4/3582/) specifies that an AES-CCM nonce is composed of the 802.15.4 Extended Address of the sender, the frame counter, and the security level of the frame. All three attributes can be found in the header of the MAC frame.
 
