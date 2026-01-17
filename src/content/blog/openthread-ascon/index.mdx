@@ -94,6 +94,12 @@ called by `otPlatRadioTransmit()`, which in turn is defined in the OpenThread co
 Given that official OpenThread source code is hardware agonistic, its implementation does AES-CCM software encryption for *all* MAC frames -- even the frames which carry application layer data.
 The source code for invoking AES-CCM software encryption for these type of frames is additionally present in the Espressif OpenThread fork; such code is defined in method `SubMac::ProcessTransmitSecurity()`, located in `src/mac/sub_mac.cpp` source file in the Espressif OpenThread fork.
 
+The `SubMac` class implementation of `ProcessTransmitSecurity()` uses `TxFrame::ProcessTransmitAesCcm()` to do AES-CCM software  encryption on MAC frames responsible for carrying application layer data.
+However, this method never runs in the Espressif OpenThread fork. At the beginning of `ProcessTransmitSecurity()`, the following line is used to determine whether AES-CCM software encryption should be used:
+```cpp
+VerifyOrExit(ShouldHandleTransmitSecurity());
+```
+
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
 
