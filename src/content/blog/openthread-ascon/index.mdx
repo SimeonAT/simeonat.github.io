@@ -72,7 +72,18 @@ Thus, in this section, I will describe how I removed the use of AES-CCM in OpenT
 
 Instead, I removed the specific function calls which invoke AES-CCM were removed, there definitions of functions which implement AES-CCM were modified so that no encryption or decryption would be done.
 
+### Removing AES-CCM MAC Layer Encryption
 
+Based on the source code in both ESP-IDF and Espressif's OpenThread fork, the process of encryption happens immediately before a MAC frame is transmitted. Given the Thread network key and a nonce, AES-CCM is used to create a ciphertext that is of the exact same length as the plaintext, along with a $32$ bit Message Integrity Counter (MIC) that is appended at the end of the frame.
+
+The [Thread specification](https://www.threadgroup.org/ThreadSpec) states that the nonce to be used in all MAC frames must follow the format described in the 802.15.4-2006 specification. The [802.15.4-2006 specification](https://standards.ieee.org/ieee/802.15.4/3582/) specifies that an AES-CCM nonce is composed of the 802.15.4 Extended Address of the sender, the frame counter, and the security level of the frame. All three attributes can be found in the header of the MAC frame.
 
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
+
+<figure>
+  <img src="/images/thesis-blog-post/aesccm-nonce.png" width="500" />
+  <figcaption>
+    The format of a nonce as input to AES-CCM encryption, as described in [802.15.4-2006](https://standards.ieee.org/ieee/802.15.4/3582/).
+  </figcaption>
+</figure>
