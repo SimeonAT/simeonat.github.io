@@ -128,7 +128,9 @@ Unlike AES MAC layer encryption, AES MAC decryption is only done in *software*. 
 
 ### Removing AES-CCM MAC Layer Encryption & Decryption
 
-I took a two-step approach in order to remove the use of AES at the MAC layer. First, I removed the functionality for doing MAC encryption. To confirm that I have successfully removed encryption, I made sure that I could see the application layer payloads of packets sent by my ESP32s in plaintext in Wireshark. Only after that I have confirmed that I have successfully removed encryption, I began working on removing the functionality for decryption. When I have successfully removed the use of both AES encryption and decryption at the MAC layer, I was able to see the application layer payloads in plaintext, and the devices were able to receive such data without any issues.
+I took a two-step approach in order to remove the use of AES at the MAC layer. First, I removed the functionality for doing MAC encryption. To confirm that I have successfully removed encryption, I made sure that I could see the application layer payloads of packets sent by my ESP32s in plaintext in Wireshark. Only after that I have confirmed that I have successfully removed encryption, I began working on removing the functionality for decryption. 
+
+When I have successfully removed the use of both AES encryption and decryption at the MAC layer, I was able to see the application layer payloads in plaintext, and the devices were able to receive such data without any issues.
 
 
 #### Removing MAC Layer *Encryption*
@@ -171,6 +173,10 @@ with AES.
 
 ### Removing MLE Encryption & Decryption
 
+Although MLE packet payloads are above the physical and data link layers in the Thread network stack, they are nonetheless are still encrypted under AES-CCM, following 802.15.4-2006 specification. Immediately before an MLE packet is transmitted, the payload gets encrypted using a symmetric key that is distinct[^4] from the one used to encrypt MAC layer payloads. 
+
+The creation of the nonce is exactly the same as done for MAC layer packets, following the nonce format described in 802.15.4-2006. A four byte MIC gets appended to the end of the MLE payload for the purposes of data integrity. The Thread Specification state that the default size is 32 bits for all MICs generated under both MLE and MAC encryption.
+
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
 
@@ -178,3 +184,5 @@ with AES.
 
 [^3]: The function is specifically defined in `esp_openthread_radio.c` file, located in the
 `components/openthread/src/port` directory of ESP-IDF.
+
+[^4]: According to the Thread specification, two different symmetric keys are separately for the purposes of MAC and MLE encryption.
