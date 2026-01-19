@@ -140,6 +140,15 @@ esp_ieee802154_set_transmit_security(&aFrame->mPsdu[-1],
                                       s_security_addr);
 ```
 
+which is used in `esp_openthread_radio.c`, a file that is a part of the ESP-IDF source code. This function passed to the ESP-IDF 802.15.4 API the necessary information needed by the hardware to follow the AES encryption procedure outlined in 802.15.4-2006.
+
+After removing the line which invokes hardware encryption, I was able to see all data packets were carrying plaintext payloads, as shown in the figure below. Since the Thread protocol is designed
+to use AES, Wireshark by default will attempt to decrypt all packets using AES before displaying them (shown in the figure below) --- including the packets that are sent in plaintext.
+This is why Wireshark will display the "decrypted" payload of plaintext packets
+as a bunch of random characters.
+
+However, the removal of this line did not remove AES encryption for frames that are transmitted during commissioning, as these frames are encrypted in software. As a result, I had to modify the software AES MAC layer encryption function: `ProcessTransmitAesCcm()`, to prevent software encryption from occurring before transmitting frames sent during commissioning. In order to accomplish this, I modified the function so that it returns before it can even begin to run the lines responsible for encrypting 802.15.4 frames.
+
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
 
