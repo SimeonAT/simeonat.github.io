@@ -185,6 +185,14 @@ for both operations are defined in the `src/thread/mle.cpp` source file of the E
 * The `Mle::TxMessage::SendTo()` method to encrypt outbound packets that are to be transmitted.
 * The `Mle::HandleUdpReceive()` method to decrypt inbound packets that have just been received.
 
+As a result, I just had to remove the respective calls to `Mle::ProcessMessageSecurity()` in these two functions in order to remove both AES-CCM encryption and decryption for all MLE packets.
+
+The first step I took was to remove just encryption, by removing only removing the call to `Mle::ProcessMessageSecurity()` in `Mle::TxMessage::SendTo()`. After doing so, I was able to see that Wireshark was *not* able to decrypt the MLE packets sent by my ESP32s, as shown in the figure below.
+
+This allowed me to infer that I have successfully removed AES-CCM encryption for MLE payloads. However, since I only removed MLE encryption, and not decryption, the ESP32s were not able to form Thread network with each other. As a result, they all formed separate partitions that contained only themselves as the respective network leaders.
+
+After I have confirmed that I have successfully removed AES-CCM encryption for MLE packets, I then removed decryption by removing the call to `Mle::ProcessMessageSecurity()` in `Mle::HandleUdpReceive()`. After doing so, my ESP32s were able to form Thread networks together.
+
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
 
