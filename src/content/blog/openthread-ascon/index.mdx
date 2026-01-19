@@ -131,7 +131,7 @@ Unlike AES MAC layer encryption, AES MAC decryption is only done in *software*. 
 I took a two-step approach in order to remove the use of AES at the MAC layer. First, I removed the functionality for doing MAC encryption. To confirm that I have successfully removed encryption, I made sure that I could see the application layer payloads of packets sent by my ESP32s in plaintext in Wireshark. Only after that I have confirmed that I have successfully removed encryption, I began working on removing the functionality for decryption. When I have successfully removed the use of both AES encryption and decryption at the MAC layer, I was able to see the application layer payloads in plaintext, and the devices were able to receive such data without any issues.
 
 
-#### Removing MAC Layer Encryption
+#### Removing MAC Layer *Encryption*
 
 To remove AES encryption on frames carrying application layer data, the line which invoked the hardware to do the encryption needed to be removed. This line was the function call:
 ```cpp
@@ -148,6 +148,28 @@ This is why Wireshark will display the "decrypted" payload of plaintext packets
 as a bunch of random characters.
 
 However, the removal of this line did not remove AES encryption for frames that are transmitted during commissioning, as these frames are encrypted in software. As a result, I had to modify the software AES MAC layer encryption function: `ProcessTransmitAesCcm()`, to prevent software encryption from occurring before transmitting frames sent during commissioning. In order to accomplish this, I modified the function so that it returns before it can even begin to run the lines responsible for encrypting 802.15.4 frames.
+
+<figure>
+  <img src="/images/thesis-blog-post/hello_world_aes.png" width="550" /> 
+  <img src="/images/thesis-blog-post/hello_world_aes_parsed.png" width="550" /> 
+  <figcaption>
+    The top figures shows a UDP packet that my ESP32 device sent with the payload: `hello_world`, as ciphertext encrypted under AES-CCM. The bottom figure shows payload after Wireshark has decrypted it. 
+  </figcaption>
+</figure>
+
+<figure>
+  <img src="/images/thesis-blog-post/hello-ucsc-plaintext-packet.png" width="800" /> 
+  <figcaption>
+    A UDP packet with the payload `hello_ucsc_plaintext_packet` in plaintext. Note that Wireshark (unsuccessfully) decrypts this payload using AES, since all frames carrying application layer data will be encrypted in Thread.
+  </figcaption>
+</figure>
+
+#### Removing MAC Layer *Decryption*
+
+Unlike AES MAC encryption, which is done both in software and hardware, MAC layer decryption is instead done only in software. More specifically, the MAC layer software decryption is implemented in the `ProcessReceiveAesCcm()`, defined in the `mac_frame.cpp` source file, which is a part of the Espressif OpenThread fork. After doing so, my ESP32 Thread devices were able to successfully send and receive plaintext application layer data. However, the MLE packets were still encrypted
+with AES.
+
+### Removing MLE Encryption & Decryption
 
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
