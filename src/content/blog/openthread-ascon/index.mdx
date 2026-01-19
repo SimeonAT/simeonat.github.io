@@ -193,6 +193,13 @@ This allowed me to infer that I have successfully removed AES-CCM encryption for
 
 After I have confirmed that I have successfully removed AES-CCM encryption for MLE packets, I then removed decryption by removing the call to `Mle::ProcessMessageSecurity()` in `Mle::HandleUdpReceive()`. After doing so, my ESP32s were able to form Thread networks together.
 
+<figure>
+  <img src="/images/thesis-blog-post/mle-plaintext.png" width="800" /> 
+  <figcaption>
+  The fact that Wireshark was unable to decrypt the MLE packets, even when my devices can still communicate with each others proves that I have successfully removed MLE encryption and decryption.
+  </figcaption>
+</figure>
+
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
 
