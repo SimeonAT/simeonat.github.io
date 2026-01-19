@@ -177,6 +177,14 @@ Although MLE packet payloads are above the physical and data link layers in the 
 
 The creation of the nonce is exactly the same as done for MAC layer packets, following the nonce format described in 802.15.4-2006. A four byte MIC gets appended to the end of the MLE payload for the purposes of data integrity. The Thread Specification state that the default size is 32 bits for all MICs generated under both MLE and MAC encryption.
 
+Decryption is handled in the same manner as the decryption of MAC frames. The nonce is recreated from the packet header, and the payload gets decrypted. In addition, the MIC corresponding to the ciphertext gets recreated, and is compared to the MIC in the MLE payload. If the MICs match, the ciphertext is valid and the payload is sent for further processing. Otherwise, the MLE packet gets dropped.
+
+AES-CCM encryption and decryption for packets sent under MLE are handled separately from MAC frames. The encryption and decryption of MLE packets are handled in software, and the implementation
+for both operations are defined in the `src/thread/mle.cpp` source file of the Espressif OpenThread fork. Furthermore, both MLE encryption and decryption are handled in a single method: `Mle::ProcessMessageSecurity()`, which takes as an argument an enumeration of type `Crypto::AesCcm::Mode` to determine whether the caller wants to encrypt or decrypt. The `Mle::ProcessMessageSecurity()` method is only ever directly used in `mle.cpp` and by two other methods:
+
+* The `Mle::TxMessage::SendTo()` method to encrypt outbound packets that are to be transmitted.
+* The `Mle::HandleUdpReceive()` method to decrypt inbound packets that have just been received.
+
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
 
