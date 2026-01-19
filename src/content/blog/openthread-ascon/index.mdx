@@ -100,7 +100,7 @@ However, this method never runs in the Espressif OpenThread fork. At the beginni
 VerifyOrExit(ShouldHandleTransmitSecurity());
 ```
 
-If the inner function `ShouldHandleTransmitSecurity()` returns `false`, `ProcessTransmitSecurity()` will immediately return. On the other hand, when `true` is returned, `ProcessTransmitSecurity()` will continue on, using `ProcessTransmitAesCcm()` to encrypt the payload contained in the MAC frame that is to be transmitted. In the case of the Espressif OpenThread fork, `ShouldHandleTransmitSecurity()` always returns `false`. Hence, the task of encrypting MAC frames which carry application layer data is always outsourced to the hardware. 
+If the inner function `ShouldHandleTransmitSecurity()` returns `false`, `ProcessTransmitSecurity()` will immediately return. On the other hand, when `true` is returned, `ProcessTransmitSecurity()` will continue on, using `ProcessTransmitAesCcm()` to encrypt the payload contained in the MAC frame that is to be transmitted. In the case of the Espressif OpenThread fork, `ShouldHandleTransmitSecurity()` always returns `false`. Hence, the task of encrypting MAC frames which carry application layer data is always passed along to the hardware. 
 
 Additionally, the implementation of `ProcessTransmitSecurity()`  defined in the `Mac` class is responsible for encrypting MAC frames that are involved in the process of commissioning. The `Mac` implementation of `ProcessTransmitSecurity()` does not contain the `ShouldHandleTransmitSecurity()` function call.  As a result, and as shown in the figure below, software encryption (and *not* hardware encryption) will always be used on MAC frames that are transmitted during commissioning.
 
