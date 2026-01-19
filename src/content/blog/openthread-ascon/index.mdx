@@ -206,6 +206,9 @@ For each place in which in the act of doing AES encryption and decryption was re
 
 Before I begin my discussion of how I integrated [LibAscon](https://github.com/TheMatjaz/LibAscon) into OpenThread, I need to note that the LibAscon implementation of ASCON AEAD is used, rather than the official ASCON C implementations of ASCON-128a and ASCON-128, as it enables to the use of these two ciphers with a tag length that is different that the size of 16 bytes that is used in the official ASCON specification. This particular feature of LibAscon was particularly helpful, as it allowed me to create ASCON ciphertext that have tag which were 4 bytes in length, the default size of MICs for MAC and MLE ciphertexts, as stated in the Thread specification. 
 
+
+### LibAscon Wrapper Functions
+
 ---
 [^1]: Thread, and hence, OpenThread, [operates on top of IEEE 802.15.4 MAC and physical layer standard](https://threadgroup.org/Newsroom/PID/1804/FilterMenu/1815/FilterCategories/19). Thus, all [ESP32 devices with an 802.15.4 transceiver](https://openthread.io/vendors/espressif) are capable of running OpenThread. 
 
