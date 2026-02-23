@@ -35,6 +35,12 @@ export const RESEARCH: Metadata = {
     "Research that I have worked on or am currently working on.",
 };
 
+export const PROJECTS: Metadata = {
+  TITLE: "Projects",
+  DESCRIPTION:
+    "Software engineering projets that I have worked on or am currently working on.",
+};
+
 export const SOCIALS: Socials = [
   {
     NAME: "GitHub",
