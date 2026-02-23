@@ -8,8 +8,6 @@ draft: false
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=simeonat&theme=nord_bright)
 
-![](http://github-profile-summary-cards.vercel.app/api/cards/stats?username=simeonat&theme=nord_bright) 
-
 This is a regularly updated list of contributions that I have made to open source projects. I organized the contributions by whether they are still open, merged, or closed. The contributions are ordered from newest to oldest.
 
 ## Open
