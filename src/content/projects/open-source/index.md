@@ -8,7 +8,7 @@ draft: false
 
 ![](http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=simeonat&theme=nord_bright)
 
-This is a regularly updated list of contributions that I have made to open source projects. I organized the contributions by whether they are still open, merged, or closed. The contributions are ordered from newest to oldest.
+This is a regularly updated list of contributions that I made, or are currently making, to open source projects. I organized the contributions by whether they are still open, merged, or closed. The contributions are ordered from newest to oldest.
 
 ## Open
 
@@ -20,7 +20,7 @@ This is a regularly updated list of contributions that I have made to open sourc
  
 2. [Pull Request #1475 in `music-assistant/frontend` -- Moved all Unit Tests to `tests` Directory](https://github.com/music-assistant/frontend/pull/1475)
 
-3. [Pull Request #1470 in `music-assistant/frontend` -- Implement Feature/Enhancement: Copy Album or Artist name from page title#](https://github.com/music-assistant/frontend/pull/1470)
+3. [Pull Request #1470 in `music-assistant/frontend` -- Implement Feature/Enhancement: Copy Album or Artist name from page title](https://github.com/music-assistant/frontend/pull/1470)
 
 4. [Pull Request #2939 in `developers.home-assistant` -- Home Assistant Core now uses 3.14.2 instead of 3.13.](https://github.com/home-assistant/developers.home-assistant/pull/2939)
 
