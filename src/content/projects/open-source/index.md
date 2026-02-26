@@ -12,15 +12,17 @@ This is a regularly updated list of contributions that I have made to open sourc
 
 ## Open
 
-1. [Pull Request #1479 in `music-assistant/frontend` -- Enable VSCode Intellisense on Unit Tests Files and Use NVM versions of Node.js in Husky Pre-commit](https://github.com/music-assistant/frontend/pull/1479)
+1. [Pull Request #1500 in `music-assistant/frontend` -- Fix issue "checkbox are not aligned with text when multi-selecting"](https://github.com/music-assistant/frontend/pull/1500)
 
 ## Merged
 
-1. [Pull Request #1475 in `music-assistant/frontend` -- Moved all Unit Tests to `tests` Directory](https://github.com/music-assistant/frontend/pull/1475)
+1. [Pull Request #1479 in `music-assistant/frontend` -- Enable VSCode Intellisense on Unit Tests Files and Use NVM versions of Node.js in Husky Pre-commit](https://github.com/music-assistant/frontend/pull/1479)
+ 
+2. [Pull Request #1475 in `music-assistant/frontend` -- Moved all Unit Tests to `tests` Directory](https://github.com/music-assistant/frontend/pull/1475)
 
-2. [Pull Request #1470 in `music-assistant/frontend` -- Implement Feature/Enhancement: Copy Album or Artist name from page title#](https://github.com/music-assistant/frontend/pull/1470)
+3. [Pull Request #1470 in `music-assistant/frontend` -- Implement Feature/Enhancement: Copy Album or Artist name from page title#](https://github.com/music-assistant/frontend/pull/1470)
 
-3. [Pull Request #2939 in `developers.home-assistant` -- Home Assistant Core now uses 3.14.2 instead of 3.13.](https://github.com/home-assistant/developers.home-assistant/pull/2939)
+4. [Pull Request #2939 in `developers.home-assistant` -- Home Assistant Core now uses 3.14.2 instead of 3.13.](https://github.com/home-assistant/developers.home-assistant/pull/2939)
 
 ## Closed
 
