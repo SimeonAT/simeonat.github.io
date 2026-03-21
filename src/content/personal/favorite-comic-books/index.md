@@ -16,7 +16,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 4. [Ultimates](https://www.marvel.com/comics/series/38865/ultimates_2024_present) by Deniz Camp **(Ongoing)**.
 
-5. [Ultimate Spider-Man](https://www.marvel.com/comics/series/38809/ultimate_spider-man_2024_-_present) by Jonathan Hickman **(Ongoing)**.
+5. [Ultimate Spider-Man](https://www.marvel.com/comics/series/38809/ultimate_spider-man_2024_-_present) by Jonathan Hickman.
 
 6. [Transformers](https://imagecomics.com/comics/series/transformers) by Daniel Warren Johnson.
 
