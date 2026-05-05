@@ -48,7 +48,6 @@ const { Content, headings } = await render(project);
           <nav class="flex gap-1">
             {project.data.demoURL && (
               <Link href={project.data.demoURL}>
-                {project.data.thesis ? "Thesis" : "Paper" }
               </Link>
             )}
             {project.data.demoURL && project.data.repoURL && <span class="text-2xl">/</span>}
