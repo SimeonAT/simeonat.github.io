@@ -21,6 +21,21 @@ type Props = CollectionEntry<"research">;
 
 const project = Astro.props;
 const { Content, headings } = await render(project);
+
+function getPaperType(paperType: string) {
+  if (paperType === "thesis")
+  {
+    return "Thesis";
+  }
+  else if (paperType === "poster")
+  {
+    return "Extended Abstract";
+  }
+  else
+  {
+    return "Paper";
+  }
+}
 ---
 
 <Layout title={project.data.title} description={project.data.description}>
@@ -44,14 +59,23 @@ const { Content, headings } = await render(project);
         {project.data.title}
       </h1>
       <div class="mt-3">
-        {(project.data.demoURL || project.data.repoURL) && (
+        {(project.data.paperURL || project.data.repoURL) && (
           <nav class="flex gap-1">
-            {project.data.demoURL && (
-              <Link href={project.data.demoURL}>
-                {project.data.thesis ? "Thesis" : "Paper" }
+            {project.data.paperURL && (
+              <Link href={project.data.paperURL}>
+                {getPaperType(project.data.paperType)}
               </Link>
             )}
-            {project.data.demoURL && project.data.repoURL && <span class="text-2xl">/</span>}
+            {project.data.paperURL && project.data.posterURL && <span class="text-2xl">/</span>}
+            {project.data.posterURL && (
+              <Link href={project.data.posterURL}>
+                Poster
+              </Link>
+            )
+
+            }
+            {(project.data.posterURL || project.data.paperURL) 
+            && project.data.repoURL && <span class="text-2xl">/</span>}
             {project.data.repoURL && (
               <Link href={project.data.repoURL} external>
                 Source Code

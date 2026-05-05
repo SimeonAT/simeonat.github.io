@@ -32,7 +32,7 @@ export const PERSONAL: Metadata = {
 export const RESEARCH: Metadata = {
   TITLE: "Research",
   DESCRIPTION:
-    "Research that I have worked on or am currently working on.",
+    "My research publications.",
 };
 
 export const PROJECTS: Metadata = {

@@ -19,9 +19,10 @@ const research = defineCollection({
     description: z.string(),
     date: z.coerce.date(),
     draft: z.boolean().optional(),
-    demoURL: z.string().optional(),
+    paperURL: z.string().optional(),
     repoURL: z.string().optional(),
-    thesis: z.boolean().optional()
+    paperType: z.string(),
+    posterURL: z.string().optional()
   }),
 });
 
@@ -33,8 +34,7 @@ const projects = defineCollection({
     date: z.coerce.date(),
     draft: z.boolean().optional(),
     demoURL: z.string().optional(),
-    repoURL: z.string().optional(),
-    thesis: z.boolean().optional()
+    repoURL: z.string().optional()
   }),
 });
 
