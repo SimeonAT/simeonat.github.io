@@ -1,6 +1,6 @@
 import type { Metadata, Site, Socials } from "@types";
 
-import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faGithub, faLinkedin, faGoogleScholar } from '@fortawesome/free-brands-svg-icons';
 
 export const baseUrl = "https://simeonat.github.io";
 
@@ -52,6 +52,12 @@ export const SOCIALS: Socials = [
     NAME: "LinkedIn",
     HREF: "https://www.linkedin.com/in/simeon-tran/",
     icon: faLinkedin,
-    end: true,
+    end: false,
+  },
+  {
+    NAME: "Google Scholar",
+    HREF: "https://scholar.google.com/citations?user=hufuz1MAAAAJ&hl=en&oi=ao",
+    icon: faGoogleScholar,
+    end: true
   }
 ];
