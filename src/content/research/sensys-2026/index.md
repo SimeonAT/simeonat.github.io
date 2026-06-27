@@ -8,8 +8,7 @@ posterURL: "/files/sensys-2026-poster.pdf"
 paperType: "poster"
 ---
 
-*Published in [SenSys 2026 -- the ACM/IEEE International Conference on
-Embedded Artificial Intelligence and Sensing Systems](https://sensys.acm.org/2026/accepted_posters.html)*
+*Published in the [2026 ACM/IEEE International Conference on Embedded Artificial Intelligence and Sensing Systems - Posters and Demos (SenSys-Adjunct)](https://ieeexplore.ieee.org/document/11575014)*
 
 ## Abstract
 
