@@ -1,6 +1,10 @@
 import type { Metadata, Site, Socials } from "@types";
 
-import { faGithub, faLinkedin, faGoogleScholar } from '@fortawesome/free-brands-svg-icons';
+import { 
+  faGithub, 
+  faLinkedin, 
+  faGoogleScholar,
+  faOrcid } from '@fortawesome/free-brands-svg-icons';
 
 export const baseUrl = "https://simeonat.github.io";
 
@@ -58,6 +62,12 @@ export const SOCIALS: Socials = [
     NAME: "Google Scholar",
     HREF: "https://scholar.google.com/citations?user=hufuz1MAAAAJ&hl=en&oi=ao",
     icon: faGoogleScholar,
+    end: false
+  },
+  {
+    NAME: "Orcid",
+    HREF: "https://orcid.org/0009-0006-7661-6612",
+    icon: faOrcid,
     end: true
   }
 ];
