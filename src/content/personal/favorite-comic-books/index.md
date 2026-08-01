@@ -2,7 +2,7 @@
 title: 'Favorite Comic Books'
 description: "My favorite comic book series of all time."
 date: 06-22-2025
-lastUpdated: 04-20-2026
+lastUpdated: 08-01-2026
 draft: false
 ---
 
@@ -14,7 +14,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 3. [3 Worlds 3 Moons](https://3w3m.substack.com) by Jonathan Hickman.
 
-4. [Ultimates](https://www.marvel.com/comics/series/38865/ultimates_2024_present) by Deniz Camp **(Ongoing)**.
+4. [Ultimates](https://www.marvel.com/comics/series/38865/ultimates_2024_present) by Deniz Camp.
 
 5. [Ultimate Spider-Man](https://www.marvel.com/comics/series/38809/ultimate_spider-man_2024_-_present) by Jonathan Hickman.
 
