@@ -62,37 +62,37 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 27. [Invincible Iron Man](https://www.marvel.com/comics/series/34717/invincible_iron_man_2022_present) by Gerry Duggan.
 
-28. [Ultimate Wolverine](https://www.marvel.com/comics/series/42303/ultimate_wolverine_2025_present) by Christopher Condon.
+28. [Hawkeye](https://www.marvel.com/comics/series/16309/hawkeye_2012_2015) by Matt Fraction.
 
-29. [Hawkeye](https://www.marvel.com/comics/series/16309/hawkeye_2012_2015) by Matt Fraction.
+29. [Mister Miracle](https://www.dcuniverseinfinite.com/comics/series/mister-miracle-2017-2019/98c5ac84-ae32-4a4e-a7a4-745ac61581d5) by Tom King.
 
-30. [Mister Miracle](https://www.dcuniverseinfinite.com/comics/series/mister-miracle-2017-2019/98c5ac84-ae32-4a4e-a7a4-745ac61581d5) by Tom King.
+30. [Batman: Last Knight on Earth](https://www.dcuniverseinfinite.com/comics/series/batman-last-knight-on-earth/aebcdc45-5b9d-43b5-a5ec-b21d105fd85a) by Scott Snyder.
 
-31. [Batman: Last Knight on Earth](https://www.dcuniverseinfinite.com/comics/series/batman-last-knight-on-earth/aebcdc45-5b9d-43b5-a5ec-b21d105fd85a) by Scott Snyder.
+31. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison Batman run).
 
-32. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison Batman run).
+32. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
 
-33. [Scott Pilgim](https://oni-press.myshopify.com/collections/scott-pilgrim) by Bryan Lee O'Malley (I really like [Scott Pilgrim Takes Off](https://www.netflix.com/title/81153115) too).
+33. [Children of the Vault](https://www.marvel.com/comics/series/36896/children_of_the_vault_2023_present) by Deniz Camp.
 
-34. [Children of the Vault](https://www.marvel.com/comics/series/36896/children_of_the_vault_2023_present) by Deniz Camp.
+34. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
 
-35. [All-Star Superman](https://www.dc.com/graphic-novels/all-star-superman-2005/all-star-superman) by Grant Morrison.
+35. [Local Man](https://imagecomics.com/comics/series/local-man) by Tim Seeley and Tony Fleecs.
 
-36. [Local Man](https://imagecomics.com/comics/series/local-man) by Tim Seeley and Tony Fleecs.
+36. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
 
-37. [The Thanos Imperative](https://www.marvel.com/comics/series/9950/the_thanos_imperative_2010) by Dan Abnett.
+37. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett.
 
-38. [Guardians of the Galaxy](https://www.marvel.com/comics/series/4885/guardians_of_the_galaxy_2008_2010) by Dan Abnett.
+38. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
 
-39. [Batman: The Killing Joke](https://www.dc.com/graphic-novels/batman-the-killing-joke-the-deluxe-edition) by Alan Moore.
+39. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns. 
 
-40. [Doomsday Clock](https://www.dcuniverseinfinite.com/collections/story-doomsday-clock) by Geoff Johns. 
+40. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
 
-41. [Batman: Three Jokers](https://www.dc.com/graphic-novels/batman-three-jokers) by Geoff Johns.
+41. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
 
-42. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
+42. [Batman Vol. 1: Failsafe](https://www.dcuniverseinfinite.com/comics/book/batman-vol-1-failsafe/618cd2a7-45cb-4519-b0f1-c43527dab5f7/c) by Chip Zdarsky.
 
-43. [Batman Vol. 1: Failsafe](https://www.dcuniverseinfinite.com/comics/book/batman-vol-1-failsafe/618cd2a7-45cb-4519-b0f1-c43527dab5f7/c) by Chip Zdarsky.
+43. [Ultimate Wolverine](https://www.marvel.com/comics/series/42303/ultimate_wolverine_2025_present) by Christopher Condon.
 
 44. [Superman: Birthright](https://www.dcuniverseinfinite.com/comics/series/superman-birthright/4dbd1eaf-245e-45aa-85b6-7e7e6d78cb50) by Mark Waid.
 
