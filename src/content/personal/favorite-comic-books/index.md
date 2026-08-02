@@ -10,7 +10,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 1. [East of West](https://imagecomics.com/comics/series/east-of-west) by Jonathan Hickman.
 
-2. [Absolute Batman](https://www.dc.com/comics/absolute-batman-2024/absolute-batman-1) by Scott Snyder **(Ongoing)**.
+2. [Absolute Batman](https://www.dcuniverseinfinite.com/comics/series/absolute-batman-2024/fc863c4b-e359-40b2-9fb3-709a5dda40f0) by Scott Snyder **(Ongoing)**.
 
 3. [Transformers](https://imagecomics.com/comics/series/transformers) by Daniel Warren Johnson.
 
@@ -34,7 +34,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 13. [Extremity](https://imagecomics.com/comics/series/extremity) by Daniel Warren Johnson.
 
-14. [Wonder Woman: Dead Earth](https://www.dc.com/graphic-novels/wonder-woman-dead-earth-2019/wonder-woman-dead-earth) by Daniel Warren Johnson.
+14. [Wonder Woman: Dead Earth](https://www.dcuniverseinfinite.com/comics/series/wonder-woman-dead-earth-2019/067bdafd-c0c8-46ee-bbcd-b6fb97f3d90e) by Daniel Warren Johnson.
 
 15. [DC K.O.](https://www.dcuniverseinfinite.com/comics/series/dc-ko-2025/683a9898-1857-4f60-9c91-d244ae669593) by Scott Snyder.
 
@@ -66,9 +66,9 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 29. [Hawkeye](https://www.marvel.com/comics/series/16309/hawkeye_2012_2015) by Matt Fraction.
 
-30. [Mister Miracle](https://www.dc.com/graphic-novels/mister-miracle-2017/mister-miracle) by Tom King.
+30. [Mister Miracle](https://www.dcuniverseinfinite.com/comics/series/mister-miracle-2017-2019/98c5ac84-ae32-4a4e-a7a4-745ac61581d5) by Tom King.
 
-31. [Batman: Last Knight on Earth](https://www.dc.com/graphic-novels/batman-last-knight-on-earth-2019/batman-last-knight-on-earth) by Scott Snyder.
+31. [Batman: Last Knight on Earth](https://www.dcuniverseinfinite.com/comics/series/batman-last-knight-on-earth/aebcdc45-5b9d-43b5-a5ec-b21d105fd85a) by Scott Snyder.
 
 32. [Batman by Grant Morrison Vol. 1](https://www.dc.com/graphic-novels/batman-by-grant-morrison-omnibus-2018/batman-by-grant-morrison-omnibus-vol-1) (still need to read the rest of the Grant Morrison Batman run).
 
@@ -92,8 +92,8 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 42. [Watchmen](https://www.dc.com/graphic-novels/watchmen-1986/watchmen) by Alan Moore.
 
-43. [Batman Vol. 1: Failsafe](https://www.dc.com/graphic-novels/batman-2016/batman-vol-1-failsafe) by Chip Zdarsky.
+43. [Batman Vol. 1: Failsafe](https://www.dcuniverseinfinite.com/comics/book/batman-vol-1-failsafe/618cd2a7-45cb-4519-b0f1-c43527dab5f7/c) by Chip Zdarsky.
 
-44. [Superman: Birthright](https://www.dc.com/graphic-novels/superman-birthright-the-deluxe-edition) by Mark Waid.
+44. [Superman: Birthright](https://www.dcuniverseinfinite.com/comics/series/superman-birthright/4dbd1eaf-245e-45aa-85b6-7e7e6d78cb50) by Mark Waid.
 
 45. [All-New Guardians of the Galaxy](https://www.marvel.com/comics/series/23058/allnew_guardians_of_the_galaxy_2017) by Gerry Duggan.
