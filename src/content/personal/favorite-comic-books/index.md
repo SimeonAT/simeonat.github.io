@@ -26,7 +26,7 @@ This is a regularly updated list of my favorite comic books of all time. Wheneve
 
 9.  [Ghost Cage](https://imagecomics.com/comics/series/ghost-cage) by Caleb Goellner and Nick Dragotta.
 
-10. [Radiant Black](https://imagecomics.com/comics/series/radiant-black) by Kyle Higgins (at least of what I read so far: [Books 1 and 2](https://www.panelboundcomics.com/products/radiant-black-massive-edition-volumes-1-2-panel-bound-exclusive-bundle)).
+10. [Radiant Black](https://imagecomics.com/comics/series/radiant-black) by Kyle Higgins (at least what I read so far: [Books 1 and 2](https://www.panelboundcomics.com/products/radiant-black-massive-edition-volumes-1-2-panel-bound-exclusive-bundle)).
 
 11. [Ultimates](https://www.marvel.com/comics/series/38865/ultimates_2024_present) by Deniz Camp.
 
